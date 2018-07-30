@@ -149,8 +149,8 @@ img {
 							<p>2、您推荐的会员如果也推荐他的朋友入户，您也有机会获得佣金。您推荐的越多，您的会员级别越高，所能赚取的单笔佣金越高。佣金表如下：</p>
 							<table class="table table-bordered agileinfo">
 								<thead>
-											<tr>
-										<td colspan=5>深户协办服务费，非会员价2680元</td>
+									<tr>
+										<td align="center" colspan=5>深户协办服务费，非会员价2680元</td>
 									</tr>
 									<tr>
 										<th>级别</th>
@@ -162,38 +162,60 @@ img {
 								</thead>
 								<tbody>
 									<tr>
-										<td class="wthree">会员</td>
-										<td class="wthree">提交个人资料注册即可</td>
-										<td class="wthree">2480</td>
-										<td class="wthree">200</td>
-										<td class="wthree">0</td>
+										<td >会员</td>
+										<td >提交个人资料注册即可</td>
+										<td >2480</td>
+										<td >200</td>
+										<td >0</td>
 
 									</tr>
 									<tr>
-										<td class="wthree">高级会员</td>
-										<td class="wthree">累计成功推荐1人（含）</td>
-										<td class="wthree">2280</td>
-										<td class="wthree">400</td>
-										<td class="wthree">200</td>
+										<td >高级会员</td>
+										<td >累计成功推荐1人（含）</td>
+										<td >2280</td>
+										<td >400</td>
+										<td >200</td>
 
 									</tr>
 									<tr>
-										<td class="wthree">黄金会员</td>
-										<td class="wthree">累计成功推荐2人以上（含）</td>
-										<td class="wthree">2080</td>
-										<td class="wthree">600</td>
-										<td class="wthree">200</td>
+										<td >黄金会员</td>
+										<td >累计成功推荐2人以上（含）</td>
+										<td >2080</td>
+										<td >600</td>
+										<td >200</td>
 
 									</tr>
 									<tr>
-										<td class="wthree">白金会员</td>
-										<td class="wthree">累计成功推荐4人以上（含）</td>
-										<td class="wthree">1880</td>
-										<td class="wthree">800</td>
-										<td class="wthree">200</td>
-
+										<td >白金会员</td>
+										<td >累计成功推荐4人以上（含）</td>
+										<td >1880</td>
+										<td >800</td>
+										<td >200</td>
+									</tr>
+									
+									<tr>
+										<td >渠道商</td>
+										<td >累计成功推荐8人以上（含）</td>
+										<td >1680</td>
+										<td >1000</td>
+										<td >200</td>
 									</tr>
 
+									<tr>
+										<td >高级代理商</td>
+										<td >累计成功推荐15人以上（含）</td>
+										<td >1480</td>
+										<td >1200</td>
+										<td >200</td>
+									</tr>
+
+									<tr>
+										<td >高级合伙人</td>
+										<td >累计成功推荐20人以上（含）</td>
+										<td >1380</td>
+										<td >1300</td>
+										<td >100</td>
+									</tr>
 								</tbody>
 							</table>
 							<br/>

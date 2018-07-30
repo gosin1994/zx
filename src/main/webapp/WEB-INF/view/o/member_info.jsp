@@ -92,7 +92,7 @@
 							<table  border="1">
 								<thead>
 									<tr>
-										<td colspan=5>深户协办服务费，非会员价2680元</td>
+										<td align="center" colspan=5>深户协办服务费，非会员价2680元</td>
 									</tr>
 									<tr>
 										<th>级别</th>
@@ -133,9 +133,31 @@
 										<td >1880</td>
 										<td >800</td>
 										<td >200</td>
-
+									</tr>
+									
+									<tr>
+										<td >渠道商</td>
+										<td >累计成功推荐8人以上（含）</td>
+										<td >1680</td>
+										<td >1000</td>
+										<td >200</td>
 									</tr>
 
+									<tr>
+										<td >高级代理商</td>
+										<td >累计成功推荐15人以上（含）</td>
+										<td >1480</td>
+										<td >1200</td>
+										<td >200</td>
+									</tr>
+
+									<tr>
+										<td >高级合伙人</td>
+										<td >累计成功推荐20人以上（含）</td>
+										<td >1380</td>
+										<td >1300</td>
+										<td >100</td>
+									</tr>
 								</tbody>
 							</table>
 							<br/>

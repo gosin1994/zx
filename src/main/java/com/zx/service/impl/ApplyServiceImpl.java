@@ -71,7 +71,7 @@ public class ApplyServiceImpl implements ApplyService {
 		Order order = new Order();
 		
 		//order.setAmount(apply.getIsMember()==1?2800:3000);
-		order.setAmount(apply.getIsMember()==1?2680:2880);
+		order.setAmount(apply.getIsMember()==1?2480:2680);
 		//System.out.println("总佣金：>>>>>>>>>>>>>>>>>>>>>>>"+order.getAmount());
 		order.setApplyId(id);
 		

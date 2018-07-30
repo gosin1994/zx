@@ -29,13 +29,17 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private Md5PasswordEncoder md5PasswordEncoder;
 	
+	/*
+	 * 系统后台用户登录
+	 * (non-Javadoc)
+	 * @see com.zx.service.UserService#login(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)
+	 */
 	public String login(HttpServletRequest request, String phone,
 			String password) {
 		User loginUser = userDao.selectByPhone(phone);
 		
 		
 		if(loginUser != null){
-			
 			if(md5PasswordEncoder.encodePassword(password, phone).equals(loginUser.getPassword())
 					){
 				HttpSession session = request.getSession();
