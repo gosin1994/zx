@@ -3,6 +3,8 @@ package com.zx.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.jsp.tagext.TryCatchFinally;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -257,11 +259,18 @@ public class ApplyServiceImpl implements ApplyService {
 	@Override
 	public List<Apply> selectChildApply(Apply query, Page<Apply> page,
 			String phone) {
-		//System.out.println("进来了。。。。。。。。。。。。。。。。。。。");
-		Member member = memberDao.selectByPhone(phone);
-		//System.out.println(member.toString());
-		query.setRootMemberId(member.getId());
+		
+		try {
+			Member member = memberDao.selectByPhone(phone);
+			System.out.println(member.toString());
+			query.setRootMemberId(member.getId());
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 		return applyDao.selectAll(query, page);
+		
+	
 	}
 
 
