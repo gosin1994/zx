@@ -27,7 +27,13 @@
   <link rel="stylesheet" type="text/css" href="https://s3.pstatp.com/bytecom/resource/vue/lib/daymode_1ae66db.css">
   <link rel="stylesheet" type="text/css" href="https://s3.pstatp.com/bytecom/resource/vue/lib/notice_7471b49.css"> 
   <link rel="stylesheet" type="text/css" href="https://s3.pstatp.com/bytecom/resource/vue/bricks/bricks-common_9b66357.css"> 
-  
+  <script id="globalvar">
+        GLOBAL_VAR = JSON.parse('{"siteId":"1590548427500557","pageIds":[1590548427500557],"pageid_map":{"506793":1590548427500557},"shareTitle":"诚士教育积分入户咨询","name":"积分入户2","shareDesc":"你关心的，才是头条！","shareThumb":"","adId":"0"}');
+        componentsConfig = {
+            PanoramaList: []
+        }
+        
+    </script> 
   <script src="https://s3.pstatp.com/bytecom/resource/vue/lib/vendor_41f269e.js"></script>
   <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
   <script src="https://s3.pstatp.com/bytecom/resource/vue/lib/main_5fdef5d.js"></script>
@@ -140,71 +146,72 @@
         </div>
         <!--===================姓名结束====================-->
         
-        
-        <!--===================手机====================-->
+        <!---====================手机======================-->
         <div class="form-element">
-         <div  class="input-group-i">
-          <span  class="input-group-addon-i warn-star" style="color:#808080;">手机</span>
+         <!---->
+         <div validate="captchav2" class="input-group-i">
+          <span id="label" class="input-group-addon-i warn-star" style="color:#808080;">手机</span>
           <div class="m-input-text">
-           <input required type="text" placeholder="请填写真实手机"  id="phone" name="phone" value="${customer.phone}" maxlength="50" class="input-style form-input-i">
+           <input type="text" placeholder="请填写真实手机" 
+           	 id="phone" name="phone" value="${customer.phone}" class="input-style form-input-i"
+           	 value="" maxlength="50">
+           
+           <span class="el-input-clear"></span>
           </div>
          </div>
         </div>
         <!--===================手机结束====================-->
         
-        <!--===================支付宝====================-->
+        <!--=====================支付宝======================-->
         <div class="form-element">
-         <div  class="input-group-i">
-          <span  class="input-group-addon-i warn-star" style="color:#808080;">支付宝</span>
+         <div validate="captchav2" class="input-group-i">
+          <span id="label" class="input-group-addon-i warn-star" style="color:#808080;">支付宝</span>
           <div class="m-input-text">
-           <input required type="text" placeholder="请填写支付宝账号(推荐使用)"   name="alipayNo" id="alipayNo"  maxlength="50" class="input-style form-input-i">
+          	
+           <input  type="text" placeholder="请填写支付宝账号(推荐使用)" 
+           	value="" name="alipayNo" id="alipayNo" 
+           	maxlength="50" class="input-style form-input-i">
+           
+           <!--<input class="city" style="width:240px;"
+			name="age" id="age" type="text" placeholder="请填写年龄" value=""
+			maxlength="2" />-->
+           
+           <span class="el-input-clear"></span>
           </div>
          </div>
         </div>
         <!--===================支付宝结束====================-->
         
-        
-        <!---====================开户银行======================-->
+        <!--===================开户银行====================-->
         <div class="form-element">
-         <!---->
          <div validate="captchav2" class="input-group-i">
           <span id="label"  style="color:#808080;">开户银行</span>
           <div class="m-input-text">
-           <input type="text" placeholder="请填写开户银行(可不填)" 
-           	 name="bankName" id="bankName"  class="input-style form-input-i"
-           	 value="" maxlength="50">
+           <input required type="text" placeholder="请填写开户银行(可不填)"  name="bankName" id="bankName" maxlength="50" class="input-style form-input-i">
            <span class="el-input-clear"></span>
           </div>
          </div>
         </div>
         <!--===================开户银行结束====================-->
         
-        <!--=====================开户名======================-->
+        <!--===================开户名====================-->
         <div class="form-element">
          <div validate="captchav2" class="input-group-i">
           <span id="label"  style="color:#808080;">开户名</span>
           <div class="m-input-text">
-          	
-           <input  type="text" placeholder="请填写开户姓名(可不填)" 
-           	value="" name="bankAccountName" id="bankAccountName" 
-           	maxlength="50" class="input-style form-input-i">
-           
+           <input required type="text" placeholder="请填写开户姓名(可不填)"  name="bankAccountName" id="bankAccountName" maxlength="50" class="input-style form-input-i">
            <span class="el-input-clear"></span>
           </div>
          </div>
         </div>
         <!--===================开户名结束====================-->
         
-        
         <!--===================开户账号====================-->
-         <div class="form-element">
+        <div class="form-element">
          <div validate="captchav2" class="input-group-i">
           <span id="label"  style="color:#808080;">开户账号</span>
           <div class="m-input-text">
-           <input  type="text" placeholder="请填写开户账号(可不填)" 
-           	value="" name="bankAccountNo" id="bankAccountNo" 
-           	maxlength="50" class="input-style form-input-i">
-           
+           <input required type="text" placeholder="请填写开户账号(可不填)" name="bankAccountNo" id="bankAccountNo" maxlength="50" class="input-style form-input-i">
            <span class="el-input-clear"></span>
           </div>
          </div>
@@ -335,12 +342,14 @@
 
 	function beforeSubmit(form) {
 
-		if ($("#name").val() == '' || !isUsername($("#name").val())) {
+		if ($("#name").val() == '' || $("#name").val() == '请输入姓名'
+				|| !isUsername($("#name").val())) {
 			alert('请填写真实姓名！');
 			$("#name").focus();
 			return false;
 		}
-		if ($("#phone").val() == '' || !isPhone($("#phone").val())) {
+		if ($("#phone").val() == '' || $("#phone").val() == '请输入手机'
+				|| !isPhone($("#phone").val())) {
 			alert('请填写真实手机号码！');
 			$("#phone").focus();
 			return false;
@@ -350,6 +359,26 @@
 			if (!isPhoneValid) {
 				return false;
 			}
+		}
+
+		if ($("#age").val() == '' || $("#age").val() == '请输入年龄'
+				|| !isNum($("#age").val())) {
+			alert('请填写真实的年龄！');
+			$("#age").focus();
+			return false;
+		}
+
+		if ($("#insureYear").val() == '' || $("#insureYear").val() == '请输入社保年限'
+				|| !isNum($("#insureYear").val())) {
+			alert('请填写真实社保年限！');
+			$("#insureYear").focus();
+			return false;
+		}
+
+		if ($("#educationLevel").val() == '-1') {
+			alert('请选择学历！');
+			$("#educationLevel").focus();
+			return false;
 		}
 
 		return true;
@@ -386,7 +415,7 @@
 		$.ajax({
 			async : false,
 			type : 'GET',
-			url : "${contextPath}/o/member/isPhoneExist",
+			url : "${contextPath}/o/customer/isPhoneExist",
 			data : {
 				phone : phone
 			},

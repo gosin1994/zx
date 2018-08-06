@@ -10,8 +10,8 @@
 <meta charset="gbk" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 <meta name="googlebot" content="index,follow" /> 
-<title>唯学教育-积分入户专家</title>
-<meta name="keywords" content="唯学教育,深圳积分入户办理,2015年深圳积分入户政策,龙华积分入户代办,民治积分入户代办,坂田积分入户代办,积分入户代办,福田积分入户代办,华强北积分入户代办,华强路积分入户代办,华强路积分入户办理,客户服务管理师培训,养老护理员培训,电子商务师培训,公共营养师培训"/>
+<title>JT捷通-积分入户专家</title>
+<meta name="keywords" content="JT捷通深圳积分入户办理,2015年深圳积分入户政策,龙华积分入户代办,民治积分入户代办,坂田积分入户代办,积分入户代办,福田积分入户代办,华强北积分入户代办,华强路积分入户代办,华强路积分入户办理,客户服务管理师培训,养老护理员培训,电子商务师培训,公共营养师培训"/>
 <!-- Templates core CSS --> 
 <link href="${contextPath}/css/o/choose1/style.css" rel="stylesheet" /> 
 <!-- Favicons --> 
@@ -32,7 +32,7 @@
 <div class="link-btns"> 
 <div class="wrap" id="link-btns"> 
 <a href="http://p.qiao.baidu.com/im/index?siteid=5907768&ucid=6872389&cp=&cr=&cw=%E6%89%8B%E6%9C%BA%E7%AB%99%E8%AE%BF%E9%97%AE" target="_blank" class="l-btn"><span>点击咨询</span></a> 
-<a href="tel:400-920-5675" class="l-btn"><span>拨打电话</span></a>
+<a href="tel:0755-32831222" class="l-btn"><span>拨打电话</span></a>
 </div> 
 </div> 
 <header class="jumbotron" role="banner" id="secton-1"> 
@@ -41,7 +41,7 @@
 <div class="col-md-7"> 
 <figure class="text-center"> 
 <div class="slideDown"">  <img src="${contextPath}/img/o/logo.png" alt="" height="45" class="img-logo" /> 
-<h1 style="margin-bottom:10px;">唯学入户</h1> 
+<h1 style="margin-bottom:10px;">捷通入户</h1> 
 </figure> 
 <h1 style="margin-bottom:10px;">入户深圳最佳选择</h1> 
 <p>积分入户协办（最快2个月）<br />
@@ -189,7 +189,7 @@
 <li style="width:47%;float:left; margin-left:5px; padding-bottom:5px;"><img src="${contextPath}/img/o/4.png" width="100%" height="120"/><li>
 <li style="width:47%;float:left; margin-left:5px; padding-bottom:5px;"><img src="${contextPath}/img/o/5.png" width="100%" height="120"/><li>
 <li style="width:47%;float:left; margin-left:5px; padding-bottom:5px;"><img src="${contextPath}/img/o/6.png" width="100%" height="120"/><li>
-</ul><div><br>24H全国免费热线<br></div><div style="font-size:21px;color:#FF6600">400-920-5675</div><br>
+</ul><div><br>24H全国免费热线<br></div><div style="font-size:21px;color:#FF6600">0755-32831222</div><br>
 <p class="btn-app-store"></p>
 
 
@@ -237,7 +237,7 @@
 </figure> 
 </div> <br>
 
-<h4 style="font-size:21px;line-height:25px;">唯学－8年专注入户<br>2016年调令样本展示</h4>
+<h4 style="font-size:21px;line-height:25px;">捷通－8年专注入户<br>2016年调令样本展示</h4>
 <img class="img-services1" src="${contextPath}/img/o/ca11_demo_left.jpg" width="100%" /><br><br>
 <img class="img-services1" src="${contextPath}/img/o/ca11_demo_right.jpg" width="100%" /> 
 <div class="col-md-4 col-services"> 
@@ -256,13 +256,13 @@
 <div class="col-md-4 col-footer"> 
 <section> 
 <p>总部地址</p>
-<p>深圳罗湖区深南东路路123号百货广场大厦西座1608单位</p><br /> 
+<p>宝安区西乡82区新安六路勤业商务中心B栋468室</p><br /> 
 <p>TEL: <a href="">0755-32831222</a><br />
 </p><br />
 </section> 
 </div> 
 <div>
-<p align="center" >唯学教育公众号</p><br />
+<p align="center" >JT捷通公众号</p><br />
 <img src="${contextPath}/img/qrcode/gongzhonghao.jpg" alt="" height="76" class="img-services " /> 
 </div>
 </div> 

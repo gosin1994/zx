@@ -10,8 +10,8 @@
 <meta charset="gbk" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 <meta name="googlebot" content="index,follow" /> 
-<title>唯学教育-积分入户专家</title>
-<meta name="keywords" content="唯学教育,深圳积分入户办理,2015年深圳积分入户政策,龙华积分入户代办,民治积分入户代办,坂田积分入户代办,积分入户代办,福田积分入户代办,华强北积分入户代办,华强路积分入户代办,华强路积分入户办理,客户服务管理师培训,养老护理员培训,电子商务师培训,公共营养师培训"/>
+<title>JT捷通-积分入户专家</title>
+<meta name="keywords" content="JT捷通深圳积分入户办理,2015年深圳积分入户政策,龙华积分入户代办,民治积分入户代办,坂田积分入户代办,积分入户代办,福田积分入户代办,华强北积分入户代办,华强路积分入户代办,华强路积分入户办理,客户服务管理师培训,养老护理员培训,电子商务师培训,公共营养师培训"/>
 <!-- Templates core CSS --> 
 <link href="${contextPath}/css/o/choose1/style.css" rel="stylesheet" /> 
 <!-- Favicons --> 
@@ -32,7 +32,7 @@
 <div class="link-btns"> 
 <div class="wrap" id="link-btns"> 
 <a href="http://p.qiao.baidu.com/im/index?siteid=5907768&ucid=6872389&cp=&cr=&cw=%E6%89%8B%E6%9C%BA%E7%AB%99%E8%AE%BF%E9%97%AE" target="_blank" class="l-btn"><span>点击咨询</span></a> 
-<a href="tel:400-920-5675" class="l-btn"><span>拨打电话</span></a>
+<a href="tel:0755-32831222" class="l-btn"><span>拨打电话</span></a>
 </div> 
 </div> 
 <header class="jumbotron" role="banner" id="secton-1"> 
@@ -64,13 +64,13 @@
 <h5 style="margin-bottom:10px;">资料提交成功！<br/><br/>感谢您选择捷通，我们的工作人员将尽快审核您的资料。祝您生活愉快！</h5>
 <br/><br/><br/>
 <p>总部地址</p>
-<p>深圳罗湖区深南东路路123号百货广场大厦西座1608单位</p><br /> 
+<p>宝安区西乡82区新安六路勤业商务中心B栋468室</p><br /> 
 <p>TEL: <a href="">0755-32831222</a><br />
 </p><br />
 </section> 
 </div> 
 <div>
-<p align="center" >唯学教育公众号</p><br />
+<p align="center" >JT捷通公众号</p><br />
 <img src="${contextPath}/img/qrcode/gongzhonghao.jpg" alt="" height="76" class="img-services " /> 
 </div>
 </div> 

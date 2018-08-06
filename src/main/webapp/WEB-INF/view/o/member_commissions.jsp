@@ -129,7 +129,7 @@
   <!--底部样式-->
 <div class="footer">
   <div class="Copyright">
-   深圳唯学教育科技有限公司 版权所有  粤ICP备16016146号-1
+   Copyright © 2018 All rights reserved 捷通   | 粤ICP备17111325号-2
   </div>
 </div>
 </div>

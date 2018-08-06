@@ -33,11 +33,9 @@
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //web-fonts -->
-<style>
-img {
-	max-width: 100%
-}
-</style>
+
+
+<style>img{max-width:100%}</style>
 
     </head>
 	
@@ -66,7 +64,7 @@ img {
 				<!-- banner -->
 				<div>
 					<div class="details-right">
-						<img src="${contextPath}/img/h5/banner-h.jpg" alt=" ">
+						<%-- <img src="${contextPath}/img/h5/banner-h.jpg" alt=" "> --%>
 						<!-- <h3 style='color:black;font-style:"仿宋"'>十年入户经验，老牌机构有保障</h3>
 							
 							<h3>扎根深圳，入户成为“深圳人”</h3>
@@ -82,8 +80,12 @@ img {
 	<!--contact --> 
             <div class="w3agile contact">
             <br/><br/>
-			      <h4 >资料提交成功！<br/><br/>感谢您关注捷通协办深户，我们的工作人员将尽快为您测评积分并联系您，请您保持手机畅通。</h4>
-			        <br/><br/><br/><br/><br/><br/>
+			        <h4 >注册会员成功！<br/><br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，请联系工作人员重新获取。<br/><br/><br/>
+					他人扫此码成功办理入户，您即可马上获得佣金。他人扫此二维码注册会员，即可成为您下属团队的一员，其推荐人成功办理深户您也可获得相应佣金</h4>
+					<br/><br/><br/>
+					<%-- <img src="${contextPath}/img/or.jpg"/> --%>
+					<img src="${member.qrcodeUrl}"/>
+			        <br/><br/><br/><br/>
 			</div>
 	<!-- //contact-->
     <!--/footer-->
@@ -97,4 +99,7 @@ img {
 <script src="${contextPath}/js/h5/jquery.nicescroll.js"></script>
 <script src="${contextPath}/js/h5/scripts.js"></script>
 </body>
+<script>
+alert("注册会员成功！请您妥善保管下方个人二维码(长按二维码图片保存至手机)。若您不慎丢失此二维码，请登录会员中心或联系工作人员重新获取。");
+</script>
 </html>

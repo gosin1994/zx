@@ -65,14 +65,14 @@ public class MemberServiceImpl implements MemberService {
 		}else {
 			name = name.substring(0, 1)+"*";
 		}
-		//String text = "推荐人："+name;
-		String text = " ";
+		String text = "推荐人："+name;
+		//String text = " ";
 		
 		String fileName = member.getPhone()+".png";
 		String qrcodeUrl = "/zx/img/qrcode/"+member.getPhone()+".jpg";
-		//String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
+		String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
 		
-		String message = "http://119.29.95.129/zx/o/customer?mid="+member.getId();
+		//String message = "http://119.29.95.129/zx/o/customer?mid="+member.getId();
 		
 		//String message = "http://192.168.31.52:8080/zx/o/customer?mid="+member.getId();
 		

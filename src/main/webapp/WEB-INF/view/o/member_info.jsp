@@ -19,8 +19,6 @@
 <link href="${contextPath}/css/h5_member/ectouch.css" rel="stylesheet" type="text/css" />
 <link href="${contextPath}/css/h5_member/style.css" rel="stylesheet" type="text/css" />
 <link href="${contextPath}/font/h5_member/iconfont.css" rel="stylesheet" type="text/css" />
-<!-- 网页添加logo -->
-<link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
 <script src="${contextPath}/js/h5_member/TouchSlide.1.1.source.js" type="text/javascript"></script>
 <script src="${contextPath}/js/h5_member/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="${contextPath}/js/h5_member/common_js.js" type="text/javascript"></script>
@@ -33,8 +31,7 @@
  <header id="header">
   <div class="header_l header_return"><a href="#" class="iconfont icon-back"></a></div>
   <h1> 会员中心 </h1>
-  <%-- <div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout"> 退出登录</a> </div> --%>
-  <div class="header_r"><a href="${contextPath}/o/member/logout">退出登录</a> </div>
+  <div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout"> </a> </div>
 </header>
   <dl class="user_top">
   <dt><a target="blank" href="${member.qrcodeUrl}"><img  width="80" height="80" src="${member.qrcodeUrl}"/></a></dt>
@@ -92,7 +89,7 @@
 							<table  border="1">
 								<thead>
 									<tr>
-										<td align="center" colspan=5>深户协办服务费，非会员价2680元</td>
+										<td colspan=5>深户协办服务费，会员价2800元</td>
 									</tr>
 									<tr>
 										<th>级别</th>
@@ -106,7 +103,7 @@
 									<tr>
 										<td >会员</td>
 										<td >提交个人资料注册即可</td>
-										<td >2480</td>
+										<td >2600</td>
 										<td >200</td>
 										<td >0</td>
 
@@ -114,7 +111,7 @@
 									<tr>
 										<td >高级会员</td>
 										<td >累计成功推荐1人（含）</td>
-										<td >2280</td>
+										<td >2400</td>
 										<td >400</td>
 										<td >200</td>
 
@@ -122,7 +119,7 @@
 									<tr>
 										<td >黄金会员</td>
 										<td >累计成功推荐2人以上（含）</td>
-										<td >2080</td>
+										<td >2200</td>
 										<td >600</td>
 										<td >200</td>
 
@@ -130,34 +127,12 @@
 									<tr>
 										<td >白金会员</td>
 										<td >累计成功推荐4人以上（含）</td>
-										<td >1880</td>
+										<td >2000</td>
 										<td >800</td>
 										<td >200</td>
-									</tr>
-									
-									<tr>
-										<td >渠道商</td>
-										<td >累计成功推荐8人以上（含）</td>
-										<td >1680</td>
-										<td >1000</td>
-										<td >200</td>
+
 									</tr>
 
-									<tr>
-										<td >高级代理商</td>
-										<td >累计成功推荐15人以上（含）</td>
-										<td >1480</td>
-										<td >1200</td>
-										<td >200</td>
-									</tr>
-
-									<tr>
-										<td >高级合伙人</td>
-										<td >累计成功推荐20人以上（含）</td>
-										<td >1380</td>
-										<td >1300</td>
-										<td >100</td>
-									</tr>
 								</tbody>
 							</table>
 							<br/>
@@ -174,7 +149,7 @@
   <!--底部样式-->
 <div class="footer">
   <div class="Copyright">
-   深圳唯学教育科技有限公司 版权所有  粤ICP备16016146号-1
+   Copyright © 2018 All rights reserved 捷通   | 粤ICP备17111325号-2
   </div>
 </div>
 </div>

@@ -4,6 +4,8 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -33,12 +35,12 @@
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //web-fonts -->
+
 <style>
 img {
 	max-width: 100%
 }
 </style>
-
     </head>
 	
 <body>
@@ -78,14 +80,21 @@ img {
 
 
 				</div>
-	<!-- //banner -->
-	<!--contact --> 
-            <div class="w3agile contact">
-            <br/><br/>
-			      <h4 >资料提交成功！<br/><br/>感谢您关注捷通协办深户，我们的工作人员将尽快为您测评积分并联系您，请您保持手机畅通。</h4>
-			        <br/><br/><br/><br/><br/><br/>
+		<div class="w3agile banner-bottom">
+		<div >
+							<br/>
+								<h4 >感谢您提交评测资料，注册成为会员入户费用立减200，并可推荐他人入户赚取佣金，您是否要注册成为会员？</h4>  
+								<br/><br/>
+<p class="btn-app-store"><a class="btn btn-danger btn-lg" href="${pageContext.request.contextPath}/o/customer/success?cid=${customer.id}" style="padding:10px 20px;">谢谢，我只想入深户</a></p>
+<br/><br/>
+<p class="btn-app-store"><a class="btn btn-danger btn-lg" href="${pageContext.request.contextPath}/o/member/apply?cid=${customer.id}" style="padding:10px 20px;">前去注册会员，立减200</a></p> 
+<br/>
+							
+						</div>
+				<br/><br/>
 			</div>
-	<!-- //contact-->
+	<!-- //banner -->
+	
     <!--/footer-->
     <jsp:include page="footer.jsp" flush="true" />
 	<!--/footer-->

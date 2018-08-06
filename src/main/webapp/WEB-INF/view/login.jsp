@@ -38,7 +38,7 @@ body {
 					<div class="icons">
 						<a href="#"><i class="halflings-icon home"></i></a>
 					</div>
-					<h1 align="center">唯学教育管理后台</h1>
+					<h1 align="center">捷通管理后台</h1>
 					<!-- <h3 align="center">大吉大利，今晚吃鸡</h3> -->
 					<form class="form-horizontal"
 						action="${contextPath}/login"

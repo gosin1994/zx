@@ -8,7 +8,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Ty	pe" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -19,8 +19,6 @@
 <link href="${contextPath}/css/h5_member/ectouch.css" rel="stylesheet" type="text/css" />
 <link href="${contextPath}/css/h5_member/style.css" rel="stylesheet" type="text/css" />
 <link href="${contextPath}/font/h5_member/iconfont.css" rel="stylesheet" type="text/css" />
-<!-- 网页添加logo -->
-<link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
 <script src="${contextPath}/js/h5_member/TouchSlide.1.1.source.js" type="text/javascript"></script>
 <script src="${contextPath}/js/h5_member/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="${contextPath}/js/h5_member/common_js.js" type="text/javascript"></script>
@@ -54,7 +52,7 @@
   </form>
  </div>
  <div style="text-align:center;">
-				深圳唯学教育科技有限公司 版权所有  粤ICP备16016146号-1
+				Copyright © 2018 All rights reserved 捷通   | 粤ICP备17111325号-2
 			</div>
 </div>
 

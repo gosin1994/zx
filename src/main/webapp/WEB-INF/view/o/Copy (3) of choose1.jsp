@@ -152,7 +152,7 @@
 						<div class="details-right">
 							<%-- <img src="${contextPath}/img/h5/logo.png" alt=" "> --%>
 							<h3>欢迎来到</h3>
-							<h4>唯学教育</h4>
+							<h4>捷通入户</h4>
 								
 							
 						</div>

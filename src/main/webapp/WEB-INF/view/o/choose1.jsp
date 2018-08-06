@@ -12,7 +12,7 @@
 
 <html lang="en">
 <head>
-<title>推荐朋友办理深户赚大钱</title>
+<title>诚邀推荐朋友办理深户赚大钱</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript">
@@ -27,8 +27,6 @@
 <!--custom css-->
 <link href="${contextPath}/css/h5/style.css" rel="stylesheet"
 	type="text/css" />
-<!-- 网页添加logo -->
-<link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
 <!--component-css-->
 <script src="${contextPath}/js/h5/jquery-2.1.4.min.js"></script>
 <!--script-->
@@ -71,7 +69,7 @@ img {
 <div class="link-btns"> 
 <div class="wrap" id="link-btns"> 
 <a href="${pageContext.request.contextPath}/o/member/login" target="_blank" class="l-btn"><span>会员中心</span></a> 
-<a href="tel:400-920-5675" class="l-btn"><span>拨打电话</span></a>
+<a href="tel:0755-32831222" class="l-btn"><span>拨打电话</span></a>
 </div> 
 </div>
 
@@ -85,7 +83,7 @@ img {
 					</div>
 					<div class="Profile-mid">
 						<h5 class="pro-link">
-							<a href="#">唯学-积分入户</a>
+							<a href="#">捷通-积分入户</a>
 						</h5>
 					</div>
 					<div class="Profile-right">
