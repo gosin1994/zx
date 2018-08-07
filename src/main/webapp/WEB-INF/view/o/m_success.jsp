@@ -99,6 +99,10 @@
 	width: 96%;
 	margin: 0 auto;
 }
+.m_sccess img{
+	width: 96%;
+	margin: 0 auto;
+}
 /*会员注册成功样式*/
 
 
@@ -121,8 +125,6 @@ a:hover {text-decoration: none;}
 }
 /*悬浮会员中心，拨打电话*/
 
-
-
   </style> 
   <script>
             !function(){  try{window.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".form-tel-autofillbtn").forEach(function(ele){ele.parentElement.remove()})})}catch(e){};  }();
@@ -132,9 +134,6 @@ a:hover {text-decoration: none;}
   <script type="text/javascript">
   	!function(e){function t(){var e=d.getBoundingClientRect().width;u=e/10,d.style.fontSize=u+"px"}function n(){o.body&&(o.body.style.fontSize=14/(i/10)+"rem")}var i=375,o=e.document,d=o.documentElement,c=d.getBoundingClientRect().width,u=(window.devicePixelRatio||1,c/10),l=null;e.addEventListener("resize",function(){clearTimeout(l),l=setTimeout(t,300)},!1),n(),"complete"===o.readyState?n():o.addEventListener("DOMContentLoaded",function(){n()},!1),t()}(window);
   
-  $("button2").click(function(){
-  	window.location.href="www.baidu.com"
-  })
   
   </script>
   <div id="csrf">
@@ -150,10 +149,11 @@ a:hover {text-decoration: none;}
    <!--=========注册生成的二维码===========-->
    <div class="m_sccess">
     <br/><br/>
-	        <h4 >恭喜您，注册会员成功！<br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，请联系工作人员重新获取。<br/><br/>
+	        <h4 >恭喜您，注册会员成功！<br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，可以登陆会员中心点击头像查看或联系我们工作人员重新获取。<br/><br/>
 			他人扫此码成功办理入户，您即可马上获得佣金。他人扫此二维码注册会员，即可成为您下属团队的一员，其推荐人成功办理深户您也可获得相应佣金</h4>
 			<br/><br/>
 			<img src="${member.qrcodeUrl}"/>
+			<!--<img src="../../../resources/img/qrcode/qrcode_bg.jpg" />-->
 	        <br/><br/><br/><br/>
 	</div>
    

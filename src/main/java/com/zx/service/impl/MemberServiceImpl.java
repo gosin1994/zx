@@ -73,7 +73,11 @@ public class MemberServiceImpl implements MemberService {
 		String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
 		
 		//String message = "http://119.29.95.129/zx/o/customer?mid="+member.getId();
+<<<<<<< HEAD
 		
+=======
+		String message = "http://www.yibaishangwu.com:9090/zx/o/customer?mid="+member.getId();
+>>>>>>> a010b047348ee9171f0523fb8300f7427f1f72b4
 		//String message = "http://192.168.31.52:8080/zx/o/customer?mid="+member.getId();
 		
 		//String message = "http://192.168.31.52:8080/zx/o/customer";
