@@ -74,7 +74,12 @@ public class MemberOController {
 	
 	
 	
-	
+	/**
+	 * 会员注册成功页面
+	 * @param request
+	 * @param member
+	 * @return
+	 */
 	@RequestMapping(value="/apply",method=RequestMethod.POST)
 	public ModelAndView apply(HttpServletRequest request, Member member){
 		ModelAndView mv = new ModelAndView();
@@ -86,7 +91,10 @@ public class MemberOController {
 	
 	
 	
-	
+	/**
+	 * 会员登录页面
+	 * @return
+	 */
 	@RequestMapping("/login")
 	public ModelAndView loginView(){
 		ModelAndView mv = new ModelAndView();

@@ -158,10 +158,11 @@ a:hover {text-decoration: none;}
    <!--=========注册生成的二维码===========-->
    <div class="m_sccess">
     <br/><br/>
-	        <h4 >恭喜您，注册会员成功！<br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，可以登陆会员中心点击头像查看或联系我们工作人员重新获取。<br/><br/>
+	        <h3 style="color: red;">恭喜您，注册会员成功！</h3>
+	        <h4 style="color: white;"><br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，可以登陆会员中心点击头像查看或联系我们工作人员重新获取。<br/><br/>
 			他人扫此码成功办理入户，您即可马上获得佣金。他人扫此二维码注册会员，即可成为您下属团队的一员，其推荐人成功办理深户您也可获得相应佣金</h4>
 			<br/><br/>
-			<img src="${member.qrcodeUrl}"/>
+			<center><img src="${member.qrcodeUrl}"/></center>
 			<!--<img src="../../../resources/img/qrcode/qrcode_bg.jpg" />-->
 	        <br/><br/><br/><br/>
 	</div>
@@ -195,3 +196,11 @@ a:hover {text-decoration: none;}
   
  </body>
 </html>
+<script>
+	
+	
+	function verify() {
+		
+		return true;
+	}
+</script>

@@ -24,6 +24,24 @@
 <script src="${contextPath}/js/h5_member/common_js.js" type="text/javascript"></script>
 <script src="${contextPath}/js/h5_member/jquery.reveal.js" type="text/javascript"></script>
 <title>会员中心</title>
+<style>
+	
+	/*佣金表样式*/
+ .comments {
+ 	background: white;
+ }
+ .comments table,th{
+ 	border: 2px;
+ 	background: white;
+ 	text-align: center;
+ 	
+ }
+ 
+ 
+ /*佣金表样式结束*/
+  
+	
+</style>
 </head>
 
 <body>
@@ -81,7 +99,72 @@
    <br/>
    <br/>
   </div>
-  <div class="menu_Manager clearfix" id="commission_rule">
+  
+  
+   <!--================奖励金说明===========================-->
+   <br />
+   <div class="comments">
+	    <h3 style="text-align: center;">奖励金赚取规则：</h3>
+		<p>1、您注册成为会员后，可以自己办理入户，也可以推荐别人成为会员。推荐成功入户累计达到相应的数量，可以升级到相应的级别。例如，推荐成功1人可升级到高级会员，并获得此级别奖励金200元。</p>
+		<p>2、您推荐的会员如果也推荐他的朋友入户，您也有机会获得奖励金。您推荐的越多，您的会员级别越高，所能赚取的单笔奖励金越高。奖励金表如下：</p>
+		<table border="1px" class="table table-bordered agileinfo">
+			<thead>
+				<tr>
+					<td colspan=5>会员推荐用户奖励表</td>
+				</tr>
+				<tr >
+					<td>级别</td>
+					<td>升级条件</td>
+					<td>直接奖励金</td>
+					<td>间接奖励金</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="wthree">会员</td>
+					<td class="wthree">提交个人资料注册即可</td>
+					<td class="wthree">200</td>
+					<td class="wthree">0</td>
+		
+				</tr>
+				<tr>
+					<td class="wthree">高级会员</td>
+					<td class="wthree">累计成功推荐1人（含）</td>
+					<td class="wthree">400</td>
+					<td class="wthree">200</td>
+		
+				</tr>
+				<tr>
+					<td class="wthree">黄金会员</td>
+					<td class="wthree">累计成功推荐2人以上（含）</td>
+					<td class="wthree">600</td>
+					<td class="wthree">200</td>
+		
+				</tr>
+				<tr>
+					<td class="wthree">白金会员</td>
+					<td class="wthree">累计成功推荐4人以上（含）</td>
+					<td class="wthree">800</td>
+					<td class="wthree">200</td>
+		
+				</tr>
+		
+			</tbody>
+		</table>
+		<br/>
+		
+		<p>3、您可以赚取您下一级别的所有代理商的奖励金差额。举例：比如A推荐B办理得200元奖励金，B如果再推荐C办理入户，A跟B都再各有200元奖励金，以此类推，逐渐在你的下面形成一个营销团队。</p>
+		<p>4、您和您推荐的会员之间的推荐关系永续不变，他推荐的每一笔业绩在三级分销系统奖励金分配规则下您都有机会分成，如果您的推荐团队足够强大，您辛苦一段时间后，将有可能持续不断的产生被动收入，甚至实现财富自由。</p>
+		<p>5、同级没有分润。</p>
+		<p>6、您的奖励金将在您推荐的客户成交后的2个工作日到账。</p>
+		<p>7、若您想了解更详细的规则或有任何疑问，建议您向您的推荐人咨询。
+	</div>							
+   <!--================奖励金说明结束===========================-->
+   
+  
+  
+  <!--================旧版佣金赚取规则=================-->
+  <!--<div class="menu_Manager clearfix" id="commission_rule">
    <br/>
    <p>佣金赚取规则：</p>
 							<p>1、您注册成为会员后，可以自己办理入户，也可以推荐别人成为会员。推荐成功入户累计达到相应的数量，可以升级到相应的级别。例如，推荐成功1人可升级到高级会员，并获得此级别佣金200元。</p>
@@ -144,7 +227,8 @@
 							<p>7、若您想了解更详细的规则或有任何疑问，建议您向您的推荐人咨询。
    <br/>
    <br/>
-  </div>
+  </div>-->
+  <!--==================旧版佣金赚取规则==========-->
  </div>
   <!--底部样式-->
 <div class="footer">

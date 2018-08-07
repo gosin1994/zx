@@ -38,7 +38,7 @@ public class CustomerOController {
 	}
 	
 	/**
-	 * 用户测评页面
+	 * 用户积分测评页面
 	 * @param mid
 	 * @return
 	 */
@@ -46,10 +46,23 @@ public class CustomerOController {
 	public ModelAndView applyView(@RequestParam("mid") Integer mid){
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("mid", mid);
-		mv.setViewName("o/customer");
+		mv.setViewName("o/customer2");
 		return mv;
 	}
 	
+	
+	/**
+	 * 用户学历测评
+	 * @param mid
+	 * @return
+	 */
+	@RequestMapping("/enter")
+	public ModelAndView enterView(@RequestParam("mid") Integer mid) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("mid", mid);
+		mv.setViewName("o/enterCustomer");
+		return mv;
+	}
 	
 	
 	/**
