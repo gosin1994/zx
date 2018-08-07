@@ -18,8 +18,8 @@ import com.google.zxing.common.BitMatrix;
 public class QRCodeUtil {
 
 	public static boolean generateQRCode(String fileName, String message, String imgFolderDir, String text) throws Exception {
-        int width = 320; // 二维码图片宽度  
-        int height = 320; // 二维码图片高度  
+        int width = 300; // 二维码图片宽度  
+        int height = 300; // 二维码图片高度  
         String format = "png";// 二维码的图片格式  
         
           
@@ -46,9 +46,16 @@ public class QRCodeUtil {
         
         //计算文字开始的位置
         //x开始的位置：（图片宽度-字体大小*字的个数）/2
-        int startX = 400;//(width-(fontSize*pressText.length()))/2;
+        //int startX = 400;//(width-(fontSize*pressText.length()))/2;
         //y开始的位置：图片高度-（图片高度-图片宽度）/2
-        int startY = 890;//height-(height-width)/2;        
+        //int startY = 890;//height-(height-width)/2;    
+        
+        //新图片文字开始的位置
+        //x开始的位置：（图片宽度-字体大小*字的个数）/2
+        int startX = 275;//(width-(fontSize*pressText.length()))/2;
+        //y开始的位置：图片高度-（图片高度-图片宽度）/2
+        int startY = 520;//height-(height-width)/2;    
+        
         
         try {
             BufferedImage source = ImageIO.read(sourceFile);
@@ -58,8 +65,8 @@ public class QRCodeUtil {
             BufferedImage image = new BufferedImage(imageW, imageH, BufferedImage.TYPE_INT_RGB);
             Graphics g = image.createGraphics();
             g.drawImage(source, 0, 0, imageW, imageH, null);
-            g.setColor(Color.WHITE);
-            g.setFont(new Font("宋体", Font.BOLD, 40));
+            g.setColor(Color.red);
+            g.setFont(new Font("黑体", Font.BOLD, 43));
             g.drawString(pressText, startX, startY);
             g.dispose();
 
@@ -92,8 +99,8 @@ public class QRCodeUtil {
         //像素一个一个复制过来
         for(int y=0; y<h_0; y++){
             for(int x=0;x<w;x++){
-            	if((x>380 && x<(380+320)) && (y>929 && y<(929+320))){
-            		bi.setRGB(x,y,bi_1.getRGB(x-380,y-929));
+            	if((x>273 && x<(273+300)) && (y>590 && y<(590+300))){//其中273为二维码的横坐标，590为二维码的纵坐标
+            		bi.setRGB(x,y,bi_1.getRGB(x-273,y-590));
             	}else {
             		bi.setRGB(x,y,bi_0.getRGB(x,y));
 					

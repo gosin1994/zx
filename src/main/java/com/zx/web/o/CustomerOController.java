@@ -24,7 +24,11 @@ public class CustomerOController {
 	@Autowired
 	private CustomerService customerService;
 	
-	
+	/**
+	 * 首页
+	 * @param mid
+	 * @return
+	 */
 	@RequestMapping
 	public ModelAndView index(@RequestParam(value="mid",defaultValue="0") Integer mid){
 		ModelAndView mv = new ModelAndView();
@@ -33,7 +37,11 @@ public class CustomerOController {
 		return mv;
 	}
 	
-	
+	/**
+	 * 用户测评页面
+	 * @param mid
+	 * @return
+	 */
 	@RequestMapping("/apply")
 	public ModelAndView applyView(@RequestParam("mid") Integer mid){
 		ModelAndView mv = new ModelAndView();
@@ -44,8 +52,12 @@ public class CustomerOController {
 	
 	
 	
-	
-
+	/**
+	 * 提交测评后跳转的页面
+	 * @param request
+	 * @param customer
+	 * @return
+	 */
 	@RequestMapping(value="/apply",method=RequestMethod.POST)
 	public ModelAndView apply(HttpServletRequest request, Customer customer){
 		ModelAndView mv = new ModelAndView();
@@ -56,7 +68,11 @@ public class CustomerOController {
 		return mv;
 	}
 	
-	
+	/**
+	 * 测评成功，点击页面"只想测评"转的页面
+	 * @param cid
+	 * @return
+	 */
 	@RequestMapping("/success")
 	public ModelAndView ok(Integer cid){
 		ModelAndView mv = new ModelAndView();
@@ -65,7 +81,11 @@ public class CustomerOController {
 		return mv;
 	}
 	
-	
+	/**
+	 * 校验手机是否已经存在
+	 * @param phone
+	 * @return
+	 */
 	@RequestMapping("/isPhoneExist")
 	@ResponseBody
 	public boolean isPhoneExist(String phone){

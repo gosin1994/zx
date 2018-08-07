@@ -282,7 +282,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color:#008CBA;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${mid}" target="_blank" style="color: white;">回到首页</a>
+   				href="${pageContext.request.contextPath}/o/customer?mid=${mid}" target="_blank" style="color: white;">回到首页</a>
    			</td>
    		</tr>
    	</table>
@@ -349,13 +349,13 @@ a:hover {text-decoration: none;}
 			<td id="list1">
 			<table style="border: 0px;" cellpadding="0" cellspacing="0">
 			<tr id="pic">
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/1.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/2.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/3.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/4.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/5.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/6.jpg" /></td>
-			<td><img style="border: 0px;" alt="" src="../../../resources/img/schoollogo/7.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/1.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/2.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/3.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/4.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/5.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/6.jpg" /></td>
+			<td><img style="border: 0px;" alt="" src="${contextPath}/img/schoollogo/7.jpg" /></td>
 			</tr>
 			</table>
 			</td>
@@ -394,7 +394,7 @@ a:hover {text-decoration: none;}
      <div tetris-data-click="" tetris-data-component-type="image" tetris-data-action-type="click" class="piece image-con">
       <div class="image-box" style="-webkit-clip-path:none;clip-path:none;">
        <a target="_blank" href="javascript:void(0);" class="image-link">
-        <div class="image-mask" style="background-color:rgba(0, 0, 0, 0);border-radius:0;"></div><img src="../../../resources/img/schoollogo/butie.jpg" class="image-item" style="border-radius:0;"></a>
+        <div class="image-mask" style="background-color:rgba(0, 0, 0, 0);border-radius:0;"></div><img src="${contextPath}/img/schoollogo/butie.jpg" class="image-item" style="border-radius:0;"></a>
        <span class="image-text"></span>
       </div>
      </div>

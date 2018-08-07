@@ -92,7 +92,16 @@
 .picutre_many img{width:170px; height:150px;}
 /*滚动logo结束*/
 
-
+/*三个banner样式*/
+.banner_tb{
+	text-align: center;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+	border-radius: 8px;/*表格圆角*/
+	border: 2px;
+}
+/*三个banner样式结束*/
 
 /*会员注册成功样式*/
 .m_sccess{
@@ -160,7 +169,19 @@ a:hover {text-decoration: none;}
    
    <!--=========注册生成的二维码结束===========-->
  
- 
+ 	<!--=========返回测评界面============-->
+ 	<center>
+ 		<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color: #f44336;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${mid}" target="_blank" style="color: white;">返回首页</a>
+	   			</td>
+	   		</tr>
+   		</table>
+   	</center>	
+   	<!--=========返回测评界面结束============-->
+   	
+ 	
     <br />
    <center>
    	<a style="color: red;font-size: 15px;" href="${pageContext.request.contextPath}/o/member/login">&lowast;进入会员中心，可查看个人二维码和佣金&lowast;</a> 
