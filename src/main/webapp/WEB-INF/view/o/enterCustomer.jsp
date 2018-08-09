@@ -159,7 +159,7 @@
         <!--================= form表单开始 ======================-->
         <div class="form-element">
         
-        <form action="${contextPath}/o/customer/enter" method="post"
+        <form action="${contextPath}/o/entercustomer/enter" method="post"
 			  onSubmit="return beforeSubmit(this);">
          <input type="hidden" name="memberId" value="${mid}">
          
@@ -249,9 +249,6 @@
          </div>
         </div>
         <!--===================报考学历结束====================-->
-        
-        
-        
         
         
         <br />
@@ -397,14 +394,14 @@
 			$("#age").focus();
 			return false;
 		}
-
+/*
 		if ($("#insureYear").val() == '' || $("#insureYear").val() == '请输入社保年限'
 				|| !isNum($("#insureYear").val())) {
 			alert('请填写真实社保年限！');
 			$("#insureYear").focus();
 			return false;
 		}
-
+*/
 		if ($("#educationLevel").val() == '-1') {
 			alert('请选择当前学历！');
 			$("#educationLevel").focus();

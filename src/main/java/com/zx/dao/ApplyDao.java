@@ -6,11 +6,12 @@ import org.apache.ibatis.annotations.Param;
 
 import com.zx.common.page.Page;
 import com.zx.entity.Apply;
+import com.zx.entity.Apply2;
 
 public interface ApplyDao {
     int deleteByPrimaryKey(Integer id);
 
-    int insert(Apply record);
+    int insert(Apply apply);
 
     int insertSelective(Apply record);
 

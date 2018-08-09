@@ -183,11 +183,6 @@
             	<option  value="4">成人本科</option>
             	<option  value="5">无学历</option>
             </select>
-            
-            
-            
-            
-            
            </div>
           </div>
          </div>

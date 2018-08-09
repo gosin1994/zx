@@ -46,23 +46,10 @@ public class CustomerOController {
 	public ModelAndView applyView(@RequestParam("mid") Integer mid){
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("mid", mid);
-		mv.setViewName("o/customer2");
+		mv.setViewName("o/customer");
 		return mv;
 	}
 	
-	
-	/**
-	 * 用户学历测评
-	 * @param mid
-	 * @return
-	 */
-	@RequestMapping("/enter")
-	public ModelAndView enterView(@RequestParam("mid") Integer mid) {
-		ModelAndView mv = new ModelAndView();
-		mv.addObject("mid", mid);
-		mv.setViewName("o/enterCustomer");
-		return mv;
-	}
 	
 	
 	/**

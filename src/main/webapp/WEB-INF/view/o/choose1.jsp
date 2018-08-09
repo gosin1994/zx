@@ -264,7 +264,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color: #f44336;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/member/login" target="_blank" style="color: white;">免考学历提升入口>></a>
+   				<a href="${pageContext.request.contextPath}/o/entercustomer/enter?mid=${mid}" target="_blank" style="color: white;">免考学历提升入口>></a>
    			</td>
    		</tr>
    	</table>

@@ -14,6 +14,9 @@ public class Apply {
     private Integer insureYear;
 
     private Integer educationLevel;
+    
+    //新加入的报考学历
+    private Integer enterEducationLevel;
 
     private Integer customerId;
 
@@ -81,7 +84,16 @@ public class Apply {
         this.educationLevel = educationLevel;
     }
 
-    public Integer getCustomerId() {
+    
+    public Integer getEnterEducationLevel() {
+		return enterEducationLevel;
+	}
+
+	public void setEnterEducationLevel(Integer enterEducationLevel) {
+		this.enterEducationLevel = enterEducationLevel;
+	}
+
+	public Integer getCustomerId() {
         return customerId;
     }
 

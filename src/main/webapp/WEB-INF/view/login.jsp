@@ -47,12 +47,12 @@ body {
 
 							<div class="input-prepend" title="手机号">
 								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="phone" id="phone"
+								<input class="input-large span10" value="18319053557" name="phone" id="phone"
 									type="text" placeholder="手机号" />
 							</div>
 							<div class="input-prepend" title="密码">
 								<span class="add-on"><i class="halflings-icon lock"></i></span>
-								<input class="input-large span10" name="password" id="passwd"
+								<input class="input-large span10" value="123456" name="password" id="passwd"
 									type="password" placeholder="密码" />
 							</div>
 							<div class="input-prepend" title="验证码">

@@ -3,22 +3,14 @@ package com.zx.entity;
 import java.util.Date;
 
 /**
- * ID:id   int (11)
-姓名：name varchar(50)
-手机：phone varchar(50)
-年龄：age int(11)
-// 社保年限：insure_year int(11)
-当前学历：educationLevel int(11)
-报考学历：enterEducationLevel int(11)
-
-上级会员：memberId  int(11)
-是否为会员：isMember  int(11)
-更新时间：updateDate  datetime
-创建时间：createDate   datetime
- *
+ * 学历apply
+ * @author gosin1994
+ * @date 2018年8月9日上午10:57:55 
+ * @email gx1001866@163.com
  */
 
-public class EduCustomer {
+
+public class Apply2 {
     private Integer id;
 
     private String name;
@@ -27,15 +19,24 @@ public class EduCustomer {
 
     private Integer age;
 
-    //private Integer insureYear;
-
     private Integer educationLevel;
     
+    //新加入的报考学历
     private Integer enterEducationLevel;
+
+    private Integer customerId;
+
+    private Integer isMember;
 
     private Integer memberId;
 
-    private Integer isMember;
+    private String memberName;
+    
+    private Integer rootMemberId;
+    
+    private String rootMemberName;
+
+    private Integer state;
 
     private Date updateTime;
 
@@ -73,13 +74,6 @@ public class EduCustomer {
         this.age = age;
     }
 
-/*    public Integer getInsureYear() {
-        return insureYear;
-    }
-
-    public void setInsureYear(Integer insureYear) {
-        this.insureYear = insureYear;
-    }*/
 
     public Integer getEducationLevel() {
         return educationLevel;
@@ -98,12 +92,12 @@ public class EduCustomer {
 		this.enterEducationLevel = enterEducationLevel;
 	}
 
-	public Integer getMemberId() {
-        return memberId;
+	public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 
     public Integer getIsMember() {
@@ -112,6 +106,46 @@ public class EduCustomer {
 
     public void setIsMember(Integer isMember) {
         this.isMember = isMember;
+    }
+
+    public Integer getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(Integer memberId) {
+        this.memberId = memberId;
+    }
+
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName == null ? null : memberName.trim();
+    }
+    
+    public Integer getRootMemberId() {
+		return rootMemberId;
+	}
+
+	public void setRootMemberId(Integer rootMemberId) {
+		this.rootMemberId = rootMemberId;
+	}
+
+	public String getRootMemberName() {
+		return rootMemberName;
+	}
+
+	public void setRootMemberName(String rootMemberName) {
+		this.rootMemberName = rootMemberName;
+	}
+
+	public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
     }
 
     public Date getUpdateTime() {

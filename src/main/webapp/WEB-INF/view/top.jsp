@@ -23,6 +23,11 @@
 							</a>
 						</li>
 						<li class="dropdown hidden-phone">
+							<a class="btn dropdown-toggle" href="${contextPath}/i/apply2">
+								学历申请
+							</a>
+						</li>
+						<li class="dropdown hidden-phone">
 							<a class="btn dropdown-toggle" href="${contextPath}/i/commission">
 								佣金管理
 							</a>
