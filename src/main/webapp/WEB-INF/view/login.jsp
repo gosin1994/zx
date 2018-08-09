@@ -15,12 +15,57 @@
 <!-- start: Mobile Specific -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- end: Mobile Specific -->
-
-
+<!--泡泡js-->
+<!--script src="../../../resources/js/h5/background.js"></script>-->
+<script async type="text/javascript" src="${contextPath}/js/h5/background.js"></script>
 <style type="text/css">
-body {
+/*body {
 	background: url(..${contextPath}/img/bg-login.jpg) !important;
+}*/
+
+/*背景泡泡样式*/
+		body, html {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			margin: 0;
+			padding: 0;
+		}
+		#background {
+			position: fixed;
+			top: 0;
+			left: 0;
+
+			z-index: -100;
+		}
+/*背景泡泡样式结束*/
+/*登录输入框*/
+.ow-fluid input{
+	width: 50%;
 }
+
+.inp{
+	width:250px;
+	height: 70px;
+}
+.inp2{
+	width:180px;
+	height: 70px;
+}
+
+/*登录输入框结束*/
+/*logo样式*/
+.img {
+	width: 200px;
+	height: 133px;
+}
+
+
+/*logo样式结束*/
+
 </style>
 
 
@@ -28,18 +73,68 @@ body {
 </head>
 
 <body onload="init();">
+	<!--背景泡泡-->
+	<canvas id="background"></canvas>   
 
 	<div class="container-fluid">
+		<!--背景泡泡-->
+	<canvas id="background"></canvas>  
+
+		
 		<div class="row-fluid">
 
 			<div class="row-fluid">
-				<br/><br/><br/><br/><br/><br/><br/><br/>
-				<div class="login-box">
+				<br/><br/><br/><br/>
+				
+   <!--===============logo位置=========================-->
+   <div >
+   		<center>
+   			<img class="img" src="${contextPath}/img/background/logo2.png"/>
+ 		</center>
+   </div>
+   <br />
+   <!--=============logo位置结束=========================-->
+   
+				<h1 style="color: white;" align="center">管理后台</h1>
+				<br />
+				<!--==============登录div===============-->
+				<div>
+					<center>
+					<form class="form-horizontal"
+						action="${contextPath}/login"
+						method="post" onsubmit="return verify();">
+						
+					<input class="inp"  class="input-large span10"  name="phone" id="phone"
+							type="text" placeholder="请输入手机号" />
+					<br /><br />	
+					<input class="inp" class="input-large span10"  name="password" id="passwd"
+							type="password" placeholder="请输入密码" />	
+					<br /><br />		
+					<div >
+					<input class="inp2" class="input-large span10" name="verifyCode" id="verifyCode"
+									type="text" placeholder="验证码" />
+									
+					&nbsp;&nbsp;		
+						<img alt="看不清？点击换一张"  onclick="refreshCode(this)" src="${contextPath}/getCode">
+								
+								
+							</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="message" style="color:red"></span>
+							<div class="button-login">
+								<button type="submit" class="btn btn-primary">登录</button>
+							</div>	
+					</form>
+					</center>
+				</div>
+				
+				<!--===============登录div结束=================-->
+				
+				
+				
+				<!--<div class="login-box">
 					<div class="icons">
 						<a href="#"><i class="halflings-icon home"></i></a>
 					</div>
-					<h1 align="center">捷通管理后台</h1>
-					<!-- <h3 align="center">大吉大利，今晚吃鸡</h3> -->
 					<form class="form-horizontal"
 						action="${contextPath}/login"
 						method="post" onsubmit="return verify();">
@@ -78,7 +173,7 @@ body {
 						</fieldset>
 					</form>
 					<hr>
-				</div>
+				</div>-->
 				<!--/span-->
 			</div>
 			<!--/row-->
