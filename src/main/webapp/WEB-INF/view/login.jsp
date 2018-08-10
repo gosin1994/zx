@@ -112,7 +112,7 @@
 					<br /><br />		
 					<div >
 					<input class="inp2" class="input-large span10" name="verifyCode" id="verifyCode"
-									type="text" placeholder="验证码" />
+									type="text" placeholder="请输入验证码" />
 									
 					&nbsp;&nbsp;		
 						<img alt="看不清？点击换一张"  onclick="refreshCode(this)" src="${contextPath}/getCode">
