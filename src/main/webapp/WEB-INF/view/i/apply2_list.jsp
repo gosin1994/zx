@@ -119,7 +119,28 @@
 											</c:choose>
 											</td>
 											
-											<td class="center"><c:out value="${apply.age}" /></td>
+											<!--年龄-->
+											<td class="center">
+											<c:choose>
+												<c:when test="${apply.age==1}">
+													25岁以下
+												</c:when>
+												<c:when test="${apply.age==2}">
+													25-30岁
+												</c:when>
+												<c:when test="${apply.age==3}">
+													30-40岁
+												</c:when>
+												<c:when test="${apply.age==4}">
+													40岁以上
+												</c:when>
+												<c:otherwise>   
+												    ${apply.age} 
+												</c:otherwise> 
+											</c:choose>
+											</td>
+											<!--年龄结束-->
+											<!--<td class="center"><c:out value="${apply.age}" /></td>-->
 											<td class="center">
 											<c:choose>
 												<c:when test="${apply.isMember==1}">

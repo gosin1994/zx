@@ -157,10 +157,10 @@ a:hover {text-decoration: none;}
    
    <!--=========注册生成的二维码===========-->
    <div class="m_sccess">
-    <br/><br/>
-	        <h3 style="color: red;">恭喜您，注册会员成功！</h3>
-	        <h4 style="color: white;"><br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，可以登陆会员中心点击头像查看或联系我们工作人员重新获取。<br/><br/>
-			他人扫此码成功办理入户，您即可马上获得佣金。他人扫此二维码注册会员，即可成为您下属团队的一员，其推荐人成功办理深户您也可获得相应佣金</h4>
+    <br/>
+	        <h4 style="color: red;">恭喜您，注册会员成功！</h4>
+	        <h5 style="color: white;"><br/><br/>以下是您的会员二维码，请您妥善保管(<span style="color:red">长按图片保存至手机</span>)。若您不慎丢失此二维码，可以登陆会员中心点击头像查看或联系我们工作人员重新获取。<br/><br/>
+			他人扫此码办理入户立减200元。若成功办理入户，您可获得最高1300元奖励金。他人扫此二维码注册会员，即可成为您下属团队的一员，其推荐人成功办理深户您也可获得相应奖励金</h4>
 			<br/><br/>
 			<center><img src="${member.qrcodeUrl}"/></center>
 			<!--<img src="../../../resources/img/qrcode/qrcode_bg.jpg" />-->
@@ -185,7 +185,7 @@ a:hover {text-decoration: none;}
  	
     <br />
    <center>
-   	<a style="color: red;font-size: 15px;" href="${pageContext.request.contextPath}/o/member/login">&lowast;进入会员中心，可查看个人二维码和佣金&lowast;</a> 
+   	<a style="color: red;font-size: 15px;" href="${pageContext.request.contextPath}/o/member/login">&lowast;进入会员中心，可查看个人二维码和奖励金&lowast;</a> 
 	</center>
    
   	<br />

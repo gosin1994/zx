@@ -55,7 +55,17 @@
  
  
  /*佣金表样式结束*/
-  
+ /*三个banner样式*/
+.banner_tb{
+	text-align: center;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+	border-radius: 8px;/*表格圆角*/
+	border: 2px;
+}
+
+/*三个banner样式结束*/
   </style> 
   <script>
             !function(){  try{window.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".form-tel-autofillbtn").forEach(function(ele){ele.parentElement.remove()})})}catch(e){};  }();
@@ -85,6 +95,13 @@
    </section>-->
    <!--================页面第一张图片结束=======================-->
    
+   <!--============顶部文字===============-->
+   <center>
+        	<p style="color: white;font-size: 15px;"> 注册会员最高可领取1300元奖励金</p>
+        </center>
+   <!--============顶部文字结束===============-->
+   
+   
    <!--===========会员注册大标题===============-->
    <section id="frame-10" class="brick-frame brick-frame-server" style="padding-top:0.267rem;padding-bottom:0.267rem;padding-left:0.4rem;padding-right:0.4rem;">
     <div class="brick-mask"></div>
@@ -111,7 +128,7 @@
        <div data-node="topCount" class="form-count">
         <span class="split-count"></span>
         <span data-node="countTextPre" class="count-text">目前已经有</span>
-        <span data-node="countTextNum" class="count-text-num">418</span>
+        <span data-node="countTextNum" class="count-text-num">2421</span>
         <span data-node="countTextPos" class="count-text">人注册成为会员</span>
         <span class="split-count"></span>
        </div>
@@ -222,21 +239,20 @@
         </div>
         </form>
         <!--=====================form表单结束=========================-->
+		<br />
+		<!--===============回到首页==============-->
+		<center>
+	   	<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color:#008CBA;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${customer.memberId}" target="_blank" style="color: white;">回到首页</a>
+	   			</td>
+	   		</tr>
+	   	</table>
+	   </center>
+		<!--===============回到首页结束==============-->
 
-	<!--==========底部的图片==================-->
-  <!-- <section id="frame-12" class="brick-frame brick-frame-server" style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
-    <div class="brick-mask"></div>
-    <div class="brick-content">
-     <div tetris-data-click="" tetris-data-component-type="image" tetris-data-action-type="click" class="piece image-con">
-      <div class="image-box" style="-webkit-clip-path:none;clip-path:none;">
-       <a target="_blank" href="javascript:void(0);" class="image-link">
-        <div class="image-mask" style="background-color:rgba(0, 0, 0, 0);border-radius:0;"></div><img src="${contextPath}/img/schoollogo/butie.jpg" class="image-item" style="border-radius:0;"></a>
-       <span class="image-text"></span>
-      </div>
-     </div>
-    </div>
-   </section>-->
-   <!--==========底部的图片结束==================-->
+
    
    <!--================奖励金说明===========================-->
    <br />
@@ -278,13 +294,7 @@
 					<td class="wthree">200</td>
 		
 				</tr>
-				<tr>
-					<td class="wthree">白金会员</td>
-					<td class="wthree">累计成功推荐4人以上（含）</td>
-					<td class="wthree">800</td>
-					<td class="wthree">200</td>
-		
-				</tr>
+				
 		
 			</tbody>
 		</table>

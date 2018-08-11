@@ -86,24 +86,70 @@
 											<td class="center">
 											<c:choose>
 												<c:when test="${apply.educationLevel==1}">
-													全日制本科及以上
+													高中、中专及以下
 												</c:when>
 												<c:when test="${apply.educationLevel==2}">
-													全日制大专
+													非全日制大专
 												</c:when>
 												<c:when test="${apply.educationLevel==3}">
-													成人大专
+													全日制大专
 												</c:when>
 												<c:when test="${apply.educationLevel==4}">
-													成人本科
+													非全日制本科
 												</c:when>
 												<c:when test="${apply.educationLevel==5}">
-													无学历
+													全日制本科及以上
 												</c:when>
 											</c:choose>
 											</td>
-											<td class="center"><c:out value="${apply.age}" /></td>
-											<td class="center"><c:out value="${apply.insureYear}" /></td>
+											
+											<!--年龄-->
+											<td class="center">
+											<c:choose>
+												<c:when test="${apply.age==1}">
+													25岁以下
+												</c:when>
+												<c:when test="${apply.age==2}">
+													25-30岁
+												</c:when>
+												<c:when test="${apply.age==3}">
+													30-40岁
+												</c:when>
+												<c:when test="${apply.age==4}">
+													40岁以上
+												</c:when>
+												<c:otherwise>   
+												    ${apply.age} 
+												</c:otherwise> 
+											</c:choose>
+											</td>
+											<!--年龄结束-->
+											<!--社保-->
+											<td class="center">
+											<c:choose>
+												<c:when test="${apply.insureYear==1}">
+													一年以下
+												</c:when>
+												<c:when test="${apply.insureYear==2}">
+													1-2年
+												</c:when>
+												<c:when test="${apply.insureYear==3}">
+													3-4年
+												</c:when>
+												<c:when test="${apply.insureYear==4}">
+													五年以上
+												</c:when>
+												<c:otherwise>   
+												    ${apply.insureYear} 
+												</c:otherwise> 
+												
+												
+											</c:choose>
+											</td>
+											<!--社保结束-->
+											
+											<!--<td class="center"><c:out value="${apply.age}" /></td>
+											<td class="center"><c:out value="${apply.insureYear}" /></td>-->
 											<td class="center">
 											<c:choose>
 												<c:when test="${apply.isMember==1}">

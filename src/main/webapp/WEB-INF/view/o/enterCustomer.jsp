@@ -197,7 +197,7 @@
           <div class="m-input-text">
            <input type="text" placeholder="请填写真实手机" 
            	 id="phone" name="phone" class="input-style form-input-i"
-           	 value="" maxlength="50">
+           	 value="" maxlength="11">
            
            <span class="el-input-clear"></span>
           </div>
@@ -206,7 +206,7 @@
         <!--===================手机结束====================-->
         
         <!--=====================年龄======================-->
-        <div class="form-element">
+        <!--<div class="form-element">
          <div validate="captchav2" class="input-group-i">
           <span id="label" class="input-group-addon-i warn-star" style="color:#808080;">年龄</span>
           <div class="m-input-text">
@@ -214,16 +214,33 @@
            <input  type="text" placeholder="请填写年龄" 
            	value="" name="age" id="age" 
            	maxlength="2" class="input-style form-input-i">
-           
-           <!--<input class="city" style="width:240px;"
-			name="age" id="age" type="text" placeholder="请填写年龄" value=""
-			maxlength="2" />-->
-           
+         
+                    
            <span class="el-input-clear"></span>
+          </div>
+         </div>
+        </div>-->
+        <!--===================年龄结束====================-->
+        <!--===================年龄====================-->
+        <div class="form-element">
+         <div data-select="{&quot;tree&quot;:{&quot;text&quot;:&quot;&quot;,&quot;children&quot;:[{&quot;text&quot;:&quot;高中、中专及以下&quot;},{&quot;text&quot;:&quot;非全日制大专&quot;},{&quot;text&quot;:&quot;全日制大专&quot;},{&quot;text&quot;:&quot;非全日制本科&quot;},{&quot;text&quot;:&quot;全日制本科&quot;}]},&quot;deep&quot;:1,&quot;arrObj&quot;:{&quot;0&quot;:{&quot;text&quot;:&quot;&quot;,&quot;pid&quot;:0,&quot;id&quot;:0,&quot;sid&quot;:[&quot;0-1&quot;,&quot;0-2&quot;,&quot;0-3&quot;,&quot;0-4&quot;,&quot;0-5&quot;]},&quot;0-1&quot;:{&quot;text&quot;:&quot;高中、中专及以下&quot;,&quot;pid&quot;:0,&quot;id&quot;:&quot;0-1&quot;,&quot;sid&quot;:[]},&quot;0-2&quot;:{&quot;text&quot;:&quot;非全日制大专&quot;,&quot;pid&quot;:0,&quot;id&quot;:&quot;0-2&quot;,&quot;sid&quot;:[]},&quot;0-3&quot;:{&quot;text&quot;:&quot;全日制大专&quot;,&quot;pid&quot;:0,&quot;id&quot;:&quot;0-3&quot;,&quot;sid&quot;:[]},&quot;0-4&quot;:{&quot;text&quot;:&quot;非全日制本科&quot;,&quot;pid&quot;:0,&quot;id&quot;:&quot;0-4&quot;,&quot;sid&quot;:[]},&quot;0-5&quot;:{&quot;text&quot;:&quot;全日制本科&quot;,&quot;pid&quot;:0,&quot;id&quot;:&quot;0-5&quot;,&quot;sid&quot;:[]}}}" class="selectMulti-group">
+          <label class="select-addon" style="color:#808080;">年龄：</label>
+          <div class="selectMulti-wrapper">
+           <div class="select-wrapper select-list1" style="display:;">
+            <select name="age" id="age"  class="input-style">
+            	<option  value="-1">--请选择--</option>
+            	<option  value="1">25以下</option>
+            	<option  value="2">25-30</option>
+            	<option  value="3">30-40</option>
+            	<option  value="4">40以上</option>
+            </select>
+           </div>
           </div>
          </div>
         </div>
         <!--===================年龄结束====================-->
+        
+        
         
         
         <!--===================当前学历====================-->
@@ -265,8 +282,11 @@
         </div>
         <!--===================报考学历结束====================-->
         
-        
         <br />
+        <center>
+        	<p style="color: red;font-size: 12px;"> 请填写真实手机号码，以便工作人员与您取得联系。</p>
+        </center>
+        
         <div class="form-element">
          <div class="input-group-i">
           <div id="submit-result" class="el-result"></div>
@@ -406,7 +426,7 @@
                 failedUrl: "javascript:void(0);",
                 successmsg: "",
                 isShowCount: "true",
-                countKit: {"prefix":"目前已经有","middle":783,"subfix":"人参与活动"},
+                countKit: {"prefix":"目前已经有","middle":11423,"subfix":"人参与活动"},
                 formId: "1604931052029966",
                 locateBgColor: "#f85959",
                 recentSubmitStyle: 0,
@@ -437,13 +457,20 @@
 				return false;
 			}
 		}
+		
+		if ($("#age").val() == '-1') {
+			alert('请选择年龄！');
+			$("#age").focus();
+			return false;
+		}
+		
 
-		if ($("#age").val() == '' || $("#age").val() == '请输入年龄'
+		/*if ($("#age").val() == '' || $("#age").val() == '请输入年龄'
 				|| !isNum($("#age").val())) {
 			alert('请填写真实的年龄！');
 			$("#age").focus();
 			return false;
-		}
+		}*/
 /*
 		if ($("#insureYear").val() == '' || $("#insureYear").val() == '请输入社保年限'
 				|| !isNum($("#insureYear").val())) {
@@ -498,7 +525,7 @@
 		$.ajax({
 			async : false,
 			type : 'GET',
-			url : "${contextPath}/o/customer/isPhoneExist",
+			url : "${contextPath}/o/entercustomer/isPhoneExist",
 			data : {
 				phone : phone
 			},

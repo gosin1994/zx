@@ -200,14 +200,15 @@ a:hover {text-decoration: none;}
 /*悬浮会员中心，拨打电话*/
 .mem_btn{
 	text-align: center;
-	background-color:#F1F5FA; 
-	width:100%; height:2.0em; 
+	background-color:#FF0000; 
+	width:100%; height:3.0em; 
 	margin:0 auto; 
 	overflow:hidden;
 	position: fixed; 
 	bottom:0;
 }
 /*悬浮会员中心，拨打电话*/
+
 /*测评成功样式*/
 #cp_success{
 	text-align: center;
@@ -289,14 +290,14 @@ a:hover {text-decoration: none;}
    	</table>
    </center>
    
-   <!--悬浮会员中心和电话-->
+     <!--悬浮会员中心和电话-->
    <table class="mem_btn">
    	<tr>
    		<td>
-   			<a style="color:lightseagreen;font-size: 18px;" href="${pageContext.request.contextPath}/o/member/login" target="_blank">会员中心</a>
+   			<a style="color:white;font-size: 18px;" href="${pageContext.request.contextPath}/o/member/login" target="_blank">会员中心</a>
    		</td>
    		<td>
-   			<a style="color:lightseagreen;font-size: 18px;" href="tel:0755-32831222">电话咨询</a>
+   			<a style="color:white;font-size: 18px;" href="tel:0755-32831222">电话咨询</a>
    		</td>
    	</tr>
    </table>

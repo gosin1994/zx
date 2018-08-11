@@ -49,7 +49,8 @@
  <header id="header">
   <div class="header_l header_return"><a href="#" class="iconfont icon-back"></a></div>
   <h1> 会员中心 </h1>
-  <div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout"> </a> </div>
+  <div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout">退出登录 </a> </div>
+  <!--<div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout">退出登录 </a> </div>-->
 </header>
   <dl class="user_top">
   <dt><a target="blank" href="${member.qrcodeUrl}"><img  width="80" height="80" src="${member.qrcodeUrl}"/></a></dt>
@@ -141,13 +142,13 @@
 					<td class="wthree">200</td>
 		
 				</tr>
-				<tr>
+				<!--<tr>
 					<td class="wthree">白金会员</td>
 					<td class="wthree">累计成功推荐4人以上（含）</td>
 					<td class="wthree">800</td>
 					<td class="wthree">200</td>
 		
-				</tr>
+				</tr>-->
 		
 			</tbody>
 		</table>

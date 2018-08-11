@@ -197,8 +197,8 @@ a:hover {text-decoration: none;}
 /*悬浮会员中心，拨打电话*/
 .mem_btn{
 	text-align: center;
-	background-color:#F1F5FA; 
-	width:100%; height:2.0em; 
+	background-color:#FF0000; 
+	width:100%; height:3.0em; 
 	margin:0 auto; 
 	overflow:hidden;
 	position: fixed; 
@@ -279,15 +279,29 @@ a:hover {text-decoration: none;}
    		</tr>
    	</table>
    </center>
+   <br />
+   <center>
+   	<table class="banner_tb">
+   		<tr>
+   			<td style="background-color:#FF6600;border-radius: 8px;">
+   				<a href="${pageContext.request.contextPath}/o/member/login" target="_blank" style="color: white;">已是会员立即登录>></a>
+   			</td>
+   		</tr>
+   	</table>
+   </center>
+   
+    <!--三个banner表格结束-->
+   
+   
    
    <!--悬浮会员中心和电话-->
    <table class="mem_btn">
    	<tr>
    		<td>
-   			<a style="color:lightseagreen;font-size: 18px;" href="${pageContext.request.contextPath}/o/member/login" target="_blank">会员中心</a>
+   			<a style="color:white;font-size: 18px;" href="${pageContext.request.contextPath}/o/member/login" target="_blank">会员中心</a>
    		</td>
    		<td>
-   			<a style="color:lightseagreen;font-size: 18px;" href="tel:0755-32831222">电话咨询</a>
+   			<a style="color:white;font-size: 18px;" href="tel:0755-32831222">电话咨询</a>
    		</td>
    	</tr>
    </table>
@@ -298,9 +312,9 @@ a:hover {text-decoration: none;}
    
    <!--三个banner表格结束-->
     <br />
-   <center>
+   <!--<center>
    	<a style="color: red;font-size: 15px;" href="${pageContext.request.contextPath}/o/member/login">&lowast;进入会员中心，可查看个人二维码和佣金&lowast;</a> 
-	</center>
+	</center>-->
    
    
   <!--一条直线-->
