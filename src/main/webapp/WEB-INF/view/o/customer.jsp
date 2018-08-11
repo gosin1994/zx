@@ -38,7 +38,21 @@
   <script>
             !function(){"use strict";!function(t,e){var r=t.seed=t.seed||[];if(r.start=+new Date,!r.initialize&&!r.invoked){r.invoked=!0,r.methods=["track","page","on","once"],r.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),r.push(e),r}};for(var n=0;n<r.methods.length;n++){var a=r.methods[n];r[a]=r.factory(a)}r.load=function(){var t=e.createElement("script");t.type="text/javascript",t.async=!0,t.src="//s3.pstatp.com/bytecom/resource/tetris/insight/v0.1.4-beta/analytics.js";var r=e.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)},r.SNIPPET_VERSION="1.1.8",r.load()}}(window,document)}();
             </script> 
-  <style>.clearfix::after{display:block;content:"";clear:both}</style> 
+  <style>
+  	.clearfix::after{display:block;content:"";clear:both}
+  	
+  	/*三个banner样式*/
+.banner_tb{
+	text-align: center;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+	border-radius: 8px;/*表格圆角*/
+	border: 2px;
+}
+
+/*三个banner样式结束*/
+  </style> 
   <script>
             !function(){  try{window.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".form-tel-autofillbtn").forEach(function(ele){ele.parentElement.remove()})})}catch(e){};  }();
   </script> 
@@ -199,6 +213,35 @@
         </div>
         </form>
         <!--=====================form表单结束=========================-->
+		
+		<br />
+		<!--================注册会员及回到首页===================-->
+		<!--注册会员-->
+		<center>
+	   	<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color:#f44336;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${mid}" target="_blank" style="color: white;">注册会员领奖励金>></a>
+	   			</td>
+	   		</tr>
+	   	</table>
+	   </center>
+	   
+	   <br />
+	   	<!--回到首页-->
+	    <center>
+	   	<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color:#008CBA;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${mid}" target="_blank" style="color: white;">回到首页</a>
+	   			</td>
+	   		</tr>
+	   	</table>
+	   </center>
+		<br />
+		
+		
+		<!--================注册会员及回到首页结束===================-->
 
 	<!--==========底部的图片==================-->
    <section id="frame-12" class="brick-frame brick-frame-server" style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">

@@ -274,7 +274,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color:#008CBA;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${mid}" target="_blank" style="color: white;">注册会员赚取佣金>></a>
+   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${mid}" target="_blank" style="color: white;">注册会员领奖励金>></a>
    			</td>
    		</tr>
    	</table>
@@ -301,28 +301,8 @@ a:hover {text-decoration: none;}
    <center>
    	<a style="color: red;font-size: 15px;" href="${pageContext.request.contextPath}/o/member/login">&lowast;进入会员中心，可查看个人二维码和佣金&lowast;</a> 
 	</center>
-   <!--<center><h2>入户可领取1.5万-3万</h2>
-   <h2>人才引进租房补贴</h2></center>
-   <div  style="width:90%;margin:0 auto">
-	   <p>
-	   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	   	根据《深圳市人才安居办法》（市政府令273号）和《关于促进人才优先发展的若干措施》（深发〔2016〕9号），经我市人力资源部门引进的应届毕业生、在职人才和归国留学人员符合条件的，可以享受新引进人才租房补贴或新引进人才租房和生活补贴。
-	   </p>
-	   <p>
-	   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	   	1、补贴标准：
-		本科15000元/人（非全日制本科6000元/人）、
-		硕士25000元/人、
-		博士30000元/人 <br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		2、年龄条件：
-		应届毕业生和归国留学人员无年龄限制。在职人才年龄要求本科未满30周岁、硕士未满35周岁、博士未满40周岁。<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		3、发放条件：
-		具有本市户籍、未享受我市住房保障政策、在深圳缴纳了社会保险。
-	   </p>
-	</div>
-  -->
+   
+   
   <!--一条直线-->
 		<!--<br/><hr style="color: white; width: 92%; margin:0 auto;" />
   		<br/>-->

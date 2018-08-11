@@ -56,7 +56,7 @@ public class EduCustomerOController {
 		
 		eduCustomerService.apply2(eduCustomer);
 		mv.addObject("eduCustomer", eduCustomer);
-		mv.setViewName("o/choose2");
+		mv.setViewName("o/choose3");
 		return mv;
 	}
 	

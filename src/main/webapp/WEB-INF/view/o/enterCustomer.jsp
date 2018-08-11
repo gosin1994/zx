@@ -72,6 +72,17 @@
     margin:0 auto;
 }
 /*分割线结束*/
+/*三个banner样式*/
+.banner_tb{
+	text-align: center;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+	border-radius: 8px;/*表格圆角*/
+	border: 2px;
+}
+
+/*三个banner样式结束*/
   	
   </style> 
   <script>
@@ -84,6 +95,10 @@
   	!function(e){function t(){var e=d.getBoundingClientRect().width;u=e/10,d.style.fontSize=u+"px"}function n(){o.body&&(o.body.style.fontSize=14/(i/10)+"rem")}var i=375,o=e.document,d=o.documentElement,c=d.getBoundingClientRect().width,u=(window.devicePixelRatio||1,c/10),l=null;e.addEventListener("resize",function(){clearTimeout(l),l=setTimeout(t,300)},!1),n(),"complete"===o.readyState?n():o.addEventListener("DOMContentLoaded",function(){n()},!1),t()}(window);
   </script>
   
+    <div class="Profile-right">
+		<a href="${pageContext.request.contextPath}/o/member/login"
+			class="sign-in popup-top-anim"> &nbsp;</a>
+	</div>
    
   <main data-server-rendered="true">
    
@@ -255,12 +270,47 @@
         <div class="form-element">
          <div class="input-group-i">
           <div id="submit-result" class="el-result"></div>
-          <input value="提交获取测评结果" type="submit" class="btn-i" style="border-radius:0.107rem;background-color:rgb(45, 151, 246) !important;color:#FFF;height:1.12rem;line-height:1.12rem;width:100%;"/>
+          <input value="提交领取学历提升方案" type="submit" class="btn-i" style="border-radius:0.107rem;background-color:rgb(45, 151, 246) !important;color:#FFF;height:1.12rem;line-height:1.12rem;width:100%;"/>
           <!---->
          </div>
         </div>
         </form>
         <!--=====================form表单结束=========================-->
+        
+        <br />
+        
+        <!--================注册会员及回到首页===================-->
+		<!--注册会员-->
+		<center>
+	   	<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color:#f44336;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${mid}" target="_blank" style="color: white;">注册会员领奖励金>></a>
+	   			</td>
+	   		</tr>
+	   	</table>
+	   </center>
+	   
+	   <br />
+	   	<!--回到首页-->
+	    <center>
+	   	<table class="banner_tb">
+	   		<tr>
+	   			<td style="background-color:#008CBA;border-radius: 8px;">
+	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${mid}" target="_blank" style="color: white;">回到首页</a>
+	   			</td>
+	   		</tr>
+	   	</table>
+	   </center>
+		<br />
+		
+		
+		<!--================注册会员及回到首页结束===================-->
+        
+        
+        
+        
+        
 <!--一条直线-->
 		<!--<br/><hr style="color: white; width: 92%; margin:0 auto;" />
   		<br/>-->

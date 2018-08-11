@@ -63,9 +63,6 @@ public class ApplyServiceImpl2 implements ApplyService2 {
 		applyDao2.updateByPrimaryKey(apply);
 		
 		
-		
-		
-		
 		Order order = new Order();
 		
 		//order.setAmount(apply.getIsMember()==1?2800:3000);
@@ -251,7 +248,6 @@ public class ApplyServiceImpl2 implements ApplyService2 {
 		
 		try {
 			Member member = memberDao.selectByPhone(phone);
-			System.out.println(member.toString());
 			query.setRootMemberId(member.getId());
 		} catch (Exception e) {
 			// TODO: handle exception

@@ -238,8 +238,8 @@ a:hover {text-decoration: none;}
    <!--=========测评成功===============-->
    <br />
    <div id="cp_success">
-	   <p>恭喜您，测评成功！</p>
-	   <p>您的测评结果将由专人回复您。</p>
+	   <p>恭喜您，提交成功！</p>
+	   <p>我司专业人员将会为您定制好学历提升方案后与您取得联系。</p>
    </div>
    
    <!--=========测评成功结束===============-->
@@ -263,7 +263,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color: #4CAF50;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/member/apply?cid=${customer.id}" target="_blank" style="color: white;">注册会员领取奖励金</a>
+   				<a href="${pageContext.request.contextPath}/o/member/apply?mid=${eduCustomer.memberId}" target="_blank" style="color: white;">注册会员领取奖励金</a>
    			</td>
    		</tr>
    	</table>
@@ -273,7 +273,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color: #f44336;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/entercustomer/enter?mid=${customer.memberId}" target="_blank" style="color: white;">无学历加分入口>></a>
+   				<a href="${pageContext.request.contextPath}/o/entercustomer/enter?mid=${eduCustomer.memberId}" target="_blank" style="color: white;">积分测评入口>></a>
    			</td>
    		</tr>
    	</table>
@@ -283,7 +283,7 @@ a:hover {text-decoration: none;}
    	<table class="banner_tb">
    		<tr>
    			<td style="background-color:#008CBA;border-radius: 8px;">
-   				<a href="${pageContext.request.contextPath}/o/customer?mid=${customer.memberId}" target="_blank" style="color: white;">回到首页</a>
+   				<a href="${pageContext.request.contextPath}/o/customer?mid=${eduCustomer.memberId}" target="_blank" style="color: white;">回到首页</a>
    			</td>
    		</tr>
    	</table>

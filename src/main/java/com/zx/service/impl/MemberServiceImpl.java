@@ -9,6 +9,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.servlet.jsp.tagext.TryCatchFinally;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -71,7 +72,13 @@ public class MemberServiceImpl implements MemberService {
 		
 		String fileName = member.getPhone()+".png";
 		String qrcodeUrl = "/zx/img/qrcode/"+member.getPhone()+".jpg";
-		String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
+		//http://www.szhukou.com.cn/zx/o/customer/apply?mid=2
+		
+		//二维码跳转到测评页面
+		// message = "http://www.szhukou.com.cn/zx/o/customer/apply?mid=44";
+		String message = "http://119.29.95.129/zx/o/customer/apply?mid="+member.getId();
+		//二维码跳转到首页
+		//String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
 		
 		//String message = "http://119.29.95.129/zx/o/customer?mid="+member.getId();
 		
@@ -445,13 +452,18 @@ public class MemberServiceImpl implements MemberService {
 		for(Member parent : parentMembers){
 			
 			for(Member child : memberPool){
-				
-				if(parent.getId()==child.getPid()){
-					
-					childrenMembers.add(child);
-					
-					result.add(child);
+				try {
+					if(parent.getId()==child.getPid()){
+						
+						childrenMembers.add(child);
+						
+						result.add(child);
+					}
+				} catch (Exception e) {
+					// TODO: handle exception
 				}
+				
+				
 			}
 		}
 		
