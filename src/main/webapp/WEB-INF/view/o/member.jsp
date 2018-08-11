@@ -245,7 +245,7 @@
 	   	<table class="banner_tb">
 	   		<tr>
 	   			<td style="background-color:#008CBA;border-radius: 8px;">
-	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${customer.memberId}" target="_blank" style="color: white;">回到首页</a>
+	   				<a href="${pageContext.request.contextPath}/o/customer?mid=${mid}" target="_blank" style="color: white;">回到首页</a>
 	   			</td>
 	   		</tr>
 	   	</table>
