@@ -1,3 +1,9 @@
+<!--
+	author：gosin1994
+	github：https://github.com/gosin1994
+	  date：2018-08-13 14:23  
+	 email：gx1008666@163.com
+-->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
