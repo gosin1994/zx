@@ -163,7 +163,7 @@
          <div  class="input-group-i">
           <span  class="input-group-addon-i warn-star" style="color:#808080;">手机</span>
           <div class="m-input-text">
-           <input required type="text" placeholder="请填写真实手机"  id="phone" name="phone" value="${customer.phone}" maxlength="50" class="input-style form-input-i">
+           <input required type="text" placeholder="请填写真实手机"  id="phone" name="phone" value="${customer.phone}" maxlength="11" class="input-style form-input-i">
           </div>
          </div>
         </div>

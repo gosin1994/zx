@@ -105,10 +105,10 @@
 						method="post" onsubmit="return verify();">
 						
 					<input class="inp"  class="input-large span10"  name="phone" id="phone"
-							value="18319053557" type="text" placeholder="请输入手机号" />
+							value="" type="text" placeholder="请输入手机号" />
 					<br /><br />	
 					<input class="inp" class="input-large span10"  name="password" id="passwd"
-							value="123456" type="password" placeholder="请输入密码" />	
+							value="" type="password" placeholder="请输入密码" />	
 					<br /><br />		
 					<div >
 					<input class="inp2" class="input-large span10" name="verifyCode" id="verifyCode"

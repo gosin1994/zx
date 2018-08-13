@@ -67,6 +67,7 @@ public class MemberServiceImpl implements MemberService {
 			name = name.substring(0, 1)+" * ";
 		}
 		String text = name;
+		//System.out.println(">>>>>>>>>>>>>>>>>>>>>>>"+name);
 		//String text = "推荐人："+name;
 		//String text = " ";
 		
@@ -75,8 +76,8 @@ public class MemberServiceImpl implements MemberService {
 		//http://www.szhukou.com.cn/zx/o/customer/apply?mid=2
 		
 		//二维码跳转到测评页面
-		// message = "http://www.szhukou.com.cn/zx/o/customer/apply?mid=44";
-		String message = "http://119.29.95.129/zx/o/customer/apply?mid="+member.getId();
+		//String message = "http://www.szhukou.com.cn/zx/o/customer/apply?mid=44";
+		String message = "http://www.szhukou.com.cn/zx/o/customer/apply?mid="+member.getId();
 		//二维码跳转到首页
 		//String message = "http://www.szhukou.com.cn/zx/o/customer?mid="+member.getId();
 		
