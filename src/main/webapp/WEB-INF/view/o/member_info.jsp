@@ -49,7 +49,7 @@
  <header id="header">
   <div class="header_l header_return"><a href="#" class="iconfont icon-back"></a></div>
   <h1> 会员中心 </h1>
-  <div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout">退出登录 </a> </div>
+  <div class="header_r"><a  href="${contextPath}/o/member/logout">退出登录 </a> </div>
   <!--<div class="header_r"><a class="iconfont icon-unie668" href="${contextPath}/o/member/logout">退出登录 </a> </div>-->
 </header>
   <dl class="user_top">
