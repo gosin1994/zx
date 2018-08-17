@@ -1,3 +1,9 @@
+<!--
+	author：gosin1994
+	github：https://github.com/gosin1994
+	  date：2018-08-17 15:23  
+	 email：gx1008666@163.com
+-->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -24,7 +30,7 @@
   <script id="globalvar">
         GLOBAL_VAR = JSON.parse('{"siteId":"1590548427500557","pageIds":[1590548427500557],"pageid_map":{"506793":1590548427500557},"shareTitle":"诚士教育积分入户咨询","name":"积分入户2","shareDesc":"你关心的，才是头条！","shareThumb":"","adId":"0"}');
         componentsConfig = {
-            PanoramaList: []
+            PanoramaList: []·
         }
     </script> 
   <script src="https://s3.pstatp.com/bytecom/resource/vue/lib/vendor_41f269e.js"></script>

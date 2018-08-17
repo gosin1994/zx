@@ -20,6 +20,7 @@ import com.alibaba.fastjson.JSON;
 import com.zx.common.util.SystemUtil;
 import com.zx.entity.Apply;
 import com.zx.entity.Remark;
+import com.zx.service.EduRemarkService;
 import com.zx.service.RemarkService;
 
 /**
@@ -30,13 +31,13 @@ import com.zx.service.RemarkService;
  */
 
 @Controller
-@RequestMapping("/i/remark")
-public class RemarkController {
+@RequestMapping("/i/eduRemark")
+public class EduRemarkController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(RemarkController.class);
+	private static final Logger logger = LoggerFactory.getLogger(EduRemarkController.class);
 	
 	@Autowired
-	private RemarkService remarkService;
+	private EduRemarkService eduRemarkService;
 	
 	@RequestMapping
 	public ModelAndView save(@RequestParam("applyId") Integer applyId,@RequestParam("remarkMsg") String remarkMsg,@RequestParam("operator") String operator) {
@@ -53,9 +54,9 @@ public class RemarkController {
 		rk.setRemark(remarkMsg);
 		
 		//保存remark
-		remarkService.save(rk);
+		eduRemarkService.save(rk);
 		
-		mv.setViewName("redirect:/i/apply");
+		mv.setViewName("redirect:/i/apply2");
 		return mv;
 		
 	}
@@ -66,7 +67,7 @@ public class RemarkController {
 		
 		List<Remark> remarks = null;
 		
-		remarks = remarkService.selectByApplyId(applyId);
+		remarks = eduRemarkService.selectByApplyId(applyId);
 		
 		String json = JSON.toJSONString(remarks);
 		

@@ -1,3 +1,10 @@
+<!--
+	author：gosin1994
+	github：https://github.com/gosin1994
+	  date：2018-08-17 14:23  
+	 email：gx1008666@163.com
+-->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -7,11 +14,104 @@
 <head>
 <!-- start: Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+//弹出隐藏层
+function ShowDiv(show_div,bg_div,hiddenId,applyId){
+	document.getElementById(show_div).style.display='block';
+	document.getElementById(bg_div).style.display='block' ;
+	/*给hidden的value赋值*/
+	document.getElementById(hiddenId).value=applyId;
+	
+	var bgdiv = document.getElementById(bg_div);
+	bgdiv.style.width = document.body.scrollWidth;
+	// bgdiv.style.height = $(document).height();
+	$("#"+bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div,bg_div){
+	document.getElementById(show_div).style.display='none';
+	document.getElementById(bg_div).style.display='none';
+};
+//查询备注
+
+function showRemark(applyId) {
+	var tbody=window.document.getElementById("tbody-result");
+	        $.ajax({
+	            type: "post",
+			    dataType: "json",
+			    url: "${pageContext.request.contextPath}/i/eduRemark/selectRemark?applyId="+applyId,
+			    data: {
+			        'applyId': applyId,
+			    },
+			    success: function (json) {
+			        if (json) {
+			            var str = "";
+			
+			            for (i in json) {
+			                str += "<tr>" +
+			                "<td>" + json[i].date + "</td>" +
+			                "<td>" + json[i].remark + "</td>" +
+			                "<td>" + json[i].operator + "</td>" +
+			                "</tr>";
+			            }
+			            tbody.innerHTML = str;
+			        }
+			    },
+			    error: function () {
+			        alert("查询失败")
+			    }
+	});
+}
+
+</script>
 <title>后台</title>
 <!-- 网页添加logo -->
 <link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
+<style>
+	/*客户跟进表*/
+	.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top: 10%;
+left: 15%;
+width: 70%;
+height: 70%;
+border: 3px solid rosybrown;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+/*表格*/
+.record{
+	width:100%;
+	border:2px;
+	border-spacing:0;
+}
+
+#MyDiv{
+	align-content: center;
+
+}
+</style>
 <!-- end: Meta -->
+
+
+
 <jsp:include page="../resource_link.jsp" flush="true" />
+
 </head>
 <body>
 	<jsp:include page="../top.jsp" flush="true" />
@@ -173,6 +273,8 @@
 												<c:otherwise>
 													<a class="btn btn-info"
 											href="javascript:void(0);" onclick="sign(${apply.id})" >签单</a>
+											<input class="btn btn-info" id="Button1" type="button" value="备注" 
+												onclick="ShowDiv('MyDiv','fade','hiddenId',${apply.id});showRemark(${apply.id})" />
 												</c:otherwise>
 											</c:choose>
 											
@@ -202,7 +304,70 @@
 		<jsp:include page="../bottom.jsp" flush="true" />
 
 	</div>
+	
+	
+	<!--=====================客户跟进表=========================-->
+<!--弹出层时背景层DIV-->
+<div id="fade" class="black_overlay">
+</div>
+<div id="MyDiv" class="white_content">
+<div style="text-align: right; cursor: default; height: 40px;" id="move">
+<span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
+</div>
+
+<!--============表格开始============-->
+	<center>
+		<h2>客户跟进表</h2>
+	<table class="record" border="1px">
+		<thead>
+			<tr align="center">
+				<td width="18%">日期</td>	
+				<td width="60%">备注</td>	
+				<td width="18%">经办人</td>	
+			</tr>
+		</thead>
+	    <tbody id="tbody-result">
+        </tbody>
+		
+	</table>
+	<br />
+	<!--form表单开始-->
+	<form class="form-horizontal" method="post"
+		action="${pageContext.request.contextPath}/i/eduRemark"
+		onSubmit="return beforeSubmit(this);" >
+	<input id="hiddenId" type="hidden" name="applyId" value="" />
+	<table class="record" border="1px">
+		<tr align="center">
+			<td width="59%">
+				<input placeholder="请输入本次跟进信息"  style="width:90%;height: 20px;" name="remarkMsg" id="remark" type="text" value="">
+			</td>	
+			<td width="19%">
+				<input placeholder="请输入您的姓名" style="height: 20px;" name="operator" id="operator" type="text" maxlength="5"value="">
+			</td>	
+			<td align="right" style="border: 0px;" width="20%">
+				<button  type="submit" class="btn btn-primary">保存</button>
+			</td>	
+		</tr>
+		
+	</table>
+	</form>
+	<!--form表单结束-->
+	
+	</center>
+	
+	
+<!--============表格结束============-->
+
+</div>
+	
+	
+	
+	<!--=====================客户跟进表结束=========================-->
 	<!--/.fluid-container-->
+	
+	
+	
+	
 </body>
 <script type="text/javascript">
 $(function(){
@@ -229,6 +394,25 @@ function initPage() {
     }
     
   
+    /*备注提交前校验*/
+function beforeSubmit(form) {
+
+		if ($("#remark").val() == '' ) {
+			alert('请填写跟进信息信息！');
+			$("#remark").focus();
+			return false;
+		}
+		
+		if ($("#operator").val() == '' || $("#operator").val() == '请输入姓名'
+				|| !isUsername($("#operator").val())) {
+			alert('请填写您的姓名！');
+			$("#operator").focus();
+			return false;
+		}
+		
+
+		return true;
+	}
    
 </script>
 

@@ -13,7 +13,7 @@ package com.zx.entity;
  * remark
  * operator
  */
-public class Remark {
+public class EduRemark {
 	private Integer id;
 	private String date;
 	private Integer applyId;
@@ -49,7 +49,7 @@ public class Remark {
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}
-	
-	
+
+
 	
 }
