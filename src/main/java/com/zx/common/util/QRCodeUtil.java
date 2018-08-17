@@ -67,7 +67,7 @@ public class QRCodeUtil {
             Graphics g = image.createGraphics();
             g.drawImage(source, 0, 0, imageW, imageH, null);
             g.setColor(Color.red);
-            g.setFont(new Font("黑体", Font.BOLD, 43));
+            g.setFont(new Font("宋体", Font.BOLD, 43));
             g.drawString(pressText, startX, startY);
             g.dispose();
 

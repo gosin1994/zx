@@ -63,7 +63,7 @@ public class MemberServiceImpl implements MemberService {
 		
 		String name = member.getName();
 		if(name.length()>2){
-			name = name.substring(0, 1)+" * "+name.substring(2);
+			name = name.substring(0, 1)+" * "+name.substring(name.length()-1);
 		}else {
 			name = name.substring(0, 1)+" * ";
 		}

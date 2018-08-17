@@ -31,6 +31,7 @@
 	<!--新建css样式-->
 <link href="${contextPath}/css/h5/style2.css" rel="stylesheet"
 	type="text/css" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/o/favicon.ico" type="image/x-icon">
 <!--component-css-->
 <script src="${contextPath}/js/h5/jquery-2.1.4.min.js"></script>
 <!--script-->

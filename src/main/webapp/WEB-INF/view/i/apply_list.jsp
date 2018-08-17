@@ -13,6 +13,7 @@
 <head>
 <!-- start: Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
 //弹出隐藏层
 function ShowDiv(show_div,bg_div,hiddenId,applyId){
@@ -63,7 +64,7 @@ function showRemark(applyId) {
 }
 
 </script>
-<title>后台</title>
+<title>后台-入户申请</title>
 <!-- 网页添加logo -->
 <link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
 <script src="/js/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -320,7 +321,7 @@ overflow: auto;
 <!--弹出层时背景层DIV-->
 <div id="fade" class="black_overlay">
 </div>
-<div id="MyDiv" class="white_content">
+<div style="position:fixed" id="MyDiv" class="white_content">
 <div style="text-align: right; cursor: default; height: 40px;" id="move">
 <span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
 </div>

@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- 网页添加logo -->
 <link rel="shortcut icon" href="${contextPath}/img/o/favicon.ico" type="image/x-icon"> 
-<title>商户后台</title>
+<title>后台-佣金管理</title>
 <!-- end: Meta -->
 <jsp:include page="../resource_link.jsp" flush="true" />
 </head>
