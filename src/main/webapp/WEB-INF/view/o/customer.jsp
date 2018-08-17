@@ -178,8 +178,10 @@
             	<option  value="-1">--请选择--</option>
             	<option  value="1">25以下</option>
             	<option  value="2">25-30</option>
-            	<option  value="3">30-40</option>
+            	<option  value="3">30-35</option>
+            	<option value="5">35-40</option>
             	<option  value="4">40以上</option>
+            	
             </select>
            </div>
           </div>

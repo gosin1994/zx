@@ -9,20 +9,67 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript">
 //弹出隐藏层
-function ShowDiv(show_div,bg_div){
+function ShowDiv(show_div,bg_div,hiddenId,applyId){
 	document.getElementById(show_div).style.display='block';
 	document.getElementById(bg_div).style.display='block' ;
+	/*给hidden的value赋值*/
+	document.getElementById(hiddenId).value=applyId;
+	
 	var bgdiv = document.getElementById(bg_div);
 	bgdiv.style.width = document.body.scrollWidth;
 	// bgdiv.style.height = $(document).height();
 	$("#"+bg_div).height($(document).height());
 };
 //关闭弹出层
-function CloseDiv(show_div,bg_div)
-{
-document.getElementById(show_div).style.display='none';
-document.getElementById(bg_div).style.display='none';
+function CloseDiv(show_div,bg_div){
+	document.getElementById(show_div).style.display='none';
+	document.getElementById(bg_div).style.display='none';
 };
+//查询备注
+/*function SelectRemark(applyId) {
+	location.href="${pageContext.request.contextPath}/i/remark/selectRemark?applyId="+applyId;
+}
+*/
+
+
+$(function () {
+    $("#Button1").click(function () {
+        var date = $('#date').val();
+        var remark = $('#remark').val();
+        var operator = $('#operator').val();
+ 
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "${pageContext.request.contextPath}/i/remark/selectRemark?applyId=",
+            data: {
+                'applyId': ${applyId},
+            },
+            success: function (data) {
+                if (data.ret) {
+                    var str = "";
+                    var data = data.data;
+ 	
+                    for (i in data) {
+                        str += "<tr>" +
+                        "<td>" + data[i].date + "</td>" +
+                        "<td>" + data[i].remark + "</td>" +
+                        "<td>" + data[i].operator + "</td>" +
+                        "</tr>";
+                    }
+                    tbody.innerHTML = str;
+                }
+            },
+            error: function () {
+                alert("查询失败")
+            }
+        });
+    });
+});
+
+
+//http://localhost:8080/zx/i/apply/sign?id=40
+//http://localhost:8080/i/remark/selectRemark?applyId=37
 </script>
 <title>后台</title>
 <!-- 网页添加logo -->
@@ -169,10 +216,14 @@ overflow: auto;
 													25-30岁
 												</c:when>
 												<c:when test="${apply.age==3}">
-													30-40岁
+													30-35岁
 												</c:when>
+												
 												<c:when test="${apply.age==4}">
 													40岁以上
+												</c:when>
+												<c:when test="${apply.age==5}">
+													35-40岁
 												</c:when>
 												<c:otherwise>   
 												    ${apply.age} 
@@ -238,9 +289,10 @@ overflow: auto;
 												<c:otherwise>
 													<a class="btn btn-info"
 											href="javascript:void(0);" onclick="sign(${apply.id})" >签单</a>
+												<input class="btn btn-info" id="Button1" type="button" value="备注" onclick="ShowDiv('MyDiv','fade','hiddenId',${apply.id})" />
 												</c:otherwise>
 											</c:choose>
-											<input class="btn btn-info" id="Button1" type="button" value="备注" onclick="ShowDiv('MyDiv','fade')" />
+											
 											<!--<a class="btn btn-info"
 											href="javascript:void(0);" onclick="sign(${apply.id})" >备注</a>
 											</td>-->
@@ -271,7 +323,6 @@ overflow: auto;
 	</div>
 	
 	<!--=====================客户跟进表=========================-->
-	<input id="Button1" type="button" value="点击弹出层" onclick="ShowDiv('MyDiv','fade')" />
 <!--弹出层时背景层DIV-->
 <div id="fade" class="black_overlay">
 </div>
@@ -284,27 +335,40 @@ overflow: auto;
 	<center>
 		<h2>客户跟进表</h2>
 	<table class="record" border="1px">
-		<tr align="center">
-			<td width="20%">日期</td>	
-			<td width="60%">备注</td>	
-			<td width="20%">经办人</td>	
-		</tr>
+		<thead>
+			<tr align="center">
+				<td width="18%">日期</td>	
+				<td width="60%">备注</td>	
+				<td width="18%">经办人</td>	
+			</tr>
+		</thead>
+	    <tbody id="tbody-result">
+        </tbody>
+		<!--<tbody >
+		<c:forEach items="${remarks}" var="remark">
+			<tr>
+				<td class="center"><c:out value="${remark.date}" /></td>
+				<td class="center"><c:out value="${remark.remark}" /></td>	
+				<td class="center"><c:out value="${remark.operator}" /></td>
+			</tr>
+		</c:forEach>
 		
+        </tbody>-->
 		
 	</table>
 	<!--form表单开始-->
 	<form class="form-horizontal" method="post"
-		action="www.baidu.com" >
-	 <input type="hidden" name="customerId" value="${apply.id}" />
+		action="${pageContext.request.contextPath}/i/remark" >
+	<input id="hiddenId" type="hidden" name="applyId" value="" />
 	<table class="record" border="1px">
 		<tr align="center">
 			<td style="border: 0px;" width="20%">
 				<!--<input style="width:98%; height: 20px;" name="date" id="date" type="text" value="">-->
 			</td>	
-			<td width="60%">
-				<input placeholder="请输入本次跟进信息"  style="width:98%;height: 20px;" name="remark" id="remark" type="text" value="">
+			<td width="59%">
+				<input placeholder="请输入本次跟进信息"  style="width:98%;height: 20px;" name="remarkMsg" id="remark" type="text" value="">
 			</td>	
-			<td width="20%">
+			<td width="19%">
 				<input placeholder="请输入您的姓名" style="width:98%;height: 20px;" name="operator" id="operator" type="text" maxlength="5"value="">
 			</td>	
 		</tr>
@@ -322,7 +386,28 @@ overflow: auto;
 	</table>
 	</form>
 	<!--form表单结束-->
-	
+	<!--===========================================-->
+	<table class="record" border="1px">
+		<thead>
+			<tr align="center">
+				<td width="18%">日期</td>	
+				<td width="60%">备注</td>	
+				<td width="18%">经办人</td>	
+			</tr>
+		</thead>
+		<tbody >
+		<c:forEach items="${remarks}" var="remark">
+			<tr>
+				<td class="center"><c:out value="${remark.date}" /></td>
+				<td class="center"><c:out value="${remark.remark}" /></td>	
+				<td class="center"><c:out value="${remark.operator}" /></td>
+			</tr>
+		</c:forEach>
+		
+        </tbody>
+		
+	</table>
+	<!--============================================-->
 	</center>
 	
 	
