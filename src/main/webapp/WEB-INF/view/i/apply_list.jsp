@@ -167,7 +167,7 @@ overflow: auto;
 										<th>学历</th>
 										<th>年龄</th>
 										<th>社保年限</th>
-										<th>是否已加盟会员</th>
+										<th>是否为会员</th>
 										<th>推荐人</th>
 										<th>顶层会员</th>
 										<th>申请时间</th>

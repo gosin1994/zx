@@ -23,7 +23,7 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 					   <li class="active"><a href="${contextPath}/i/member"> <i
-								class="fa-icon-bar-chart"></i><span class="hidden-tablet">会员管理</span>
+								class="fa-icon-bar-chart"></i><span class="hidden-tablet">会员列表</span>
 						</a></li>
 						<li ><a href="${contextPath}/i/member/hierarchy"> <i
 								class="fa-icon-bar-chart"></i><span class="hidden-tablet">会员层级</span>
