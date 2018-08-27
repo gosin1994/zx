@@ -1,6 +1,5 @@
 <!--
 	author：gosin1994
-	github：https://github.com/gosin1994
 	  date：2018-08-17 14:23  
 	 email：gx1008666@163.com
 -->
@@ -173,6 +172,7 @@ overflow: auto;
 										<th>申请时间</th>
 										<th>是否签单</th>
 										<th class="center">操作</th>
+										<!--<th>最新跟进</th>-->
 									</tr>
 								</thead>
 								<tbody>
@@ -251,7 +251,7 @@ overflow: auto;
 											
 											<!--<td class="center"><c:out value="${apply.age}" /></td>
 											<td class="center"><c:out value="${apply.insureYear}" /></td>-->
-											<td class="center">
+											<td  class="center">
 											<c:choose>
 												<c:when test="${apply.isMember==1}">
 													是
@@ -263,7 +263,7 @@ overflow: auto;
 											</td>
 											<td class="center"><c:out value="${apply.memberName}" /></td>
 											<td class="center"><c:out value="${apply.rootMemberName}" /></td>
-											<td class="center"><fmt:formatDate
+											<td  class="center"><fmt:formatDate
 													value="${apply.createTime}" type="both" /></td>
 											<td class="center">
 											<c:choose>
@@ -291,6 +291,10 @@ overflow: auto;
 											<!--<a class="btn btn-info"
 											href="javascript:void(0);" onclick="sign(${apply.id})" >备注</a>
 											</td>-->
+										<!--<td width="10%">
+										电话为接通，哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈ff
+										</td>-->
+
 										</tr>
 									</c:forEach>
 								</tbody>

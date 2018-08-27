@@ -1,6 +1,5 @@
 <!--
-	author：gosin1994
-	github：https://github.com/gosin1994
+	author：龚鑫
 	  date：2018-08-06 14:00 
 	 email：gx1008666@163.com
 -->
@@ -177,7 +176,7 @@ a:hover {text-decoration: none;}
    			<a style="color:white;font-size: 18px;" href="${pageContext.request.contextPath}/o/member/login" target="_blank">会员中心</a>
    		</td>
    		<td>
-   			<a style="color:white;font-size: 18px;" href="tel:0755-32831222">电话咨询</a>
+   			<a style="color:white;font-size: 18px;" href="tel:13823267778">电话咨询</a>
    		</td>
    	</tr>
    </table>

@@ -1,6 +1,5 @@
 <!--
-	author：gosin1994
-	github：https://github.com/gosin1994
+	author：龚鑫
 	  date：2018-08-17 15:23  
 	 email：gx1008666@163.com
 -->
@@ -313,7 +312,7 @@
     <div class="brick-mask" style="background-color:rgba(0, 0, 0, 0);"></div>
     <div class="brick-content">
      <div class="piece telephone-button">
-      <a id="a14" href="tel:0755-32831222" data-tel="0755-32831222" tt-data-eventvalue="0755-32831222" phone_number="0755-32831222" class="tel-btn style1" style="background-color:rgb(45, 151, 246);color:#FFF;line-height:1.173rem;border-radius:0.107rem;border-width:0.027rem;border-color:rgba(0, 0, 0, 0);border-style:none;font-size:0.48rem;width:100%;height:1.173rem;"><i class="brick-i-tel-left icon-telphone_left"></i><span class="tel-label text-ellipsis">电话咨询</span><i class="brick-i-tel-right icon-telphone_right"></i><i class="icon-telphone_circle brick-i-tel"></i><i class="icon-left_arrow"></i><input type="hidden" name="site_id" value="1590548427500557"><input type="hidden" name="ad_id" value="0"></a>
+      <a id="a14" href="tel:13823267778" data-tel="13823267778" tt-data-eventvalue="13823267778" phone_number="13823267778" class="tel-btn style1" style="background-color:rgb(45, 151, 246);color:#FFF;line-height:1.173rem;border-radius:0.107rem;border-width:0.027rem;border-color:rgba(0, 0, 0, 0);border-style:none;font-size:0.48rem;width:100%;height:1.173rem;"><i class="brick-i-tel-left icon-telphone_left"></i><span class="tel-label text-ellipsis">电话咨询</span><i class="brick-i-tel-right icon-telphone_right"></i><i class="icon-telphone_circle brick-i-tel"></i><i class="icon-left_arrow"></i><input type="hidden" name="site_id" value="1590548427500557"><input type="hidden" name="ad_id" value="0"></a>
      </div>
     </div>
    </section>

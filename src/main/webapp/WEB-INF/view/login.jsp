@@ -1,6 +1,5 @@
 <!--
-	author：gosin1994
-	github：https://github.com/gosin1994
+	author：龚鑫
 	  date：2018-08-13 14:23  
 	 email：gx1008666@163.com
 -->
@@ -112,10 +111,10 @@
 						method="post" onsubmit="return verify();">
 						
 					<input class="inp"  class="input-large span10"  name="phone" id="phone"
-							value="" type="text" placeholder="请输入手机号" />
+							value="13631787532" type="text" placeholder="请输入手机号" />
 					<br /><br />	
 					<input class="inp" class="input-large span10"  name="password" id="passwd"
-							value="" type="password" placeholder="请输入密码" />	
+							value="123456" type="password" placeholder="请输入密码" />	
 					<br /><br />		
 					<div >
 					<input class="inp2" class="input-large span10" name="verifyCode" id="verifyCode"
