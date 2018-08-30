@@ -62,6 +62,37 @@ function showRemark(applyId) {
 	});
 }
 
+//显示最新留言
+/*$(document).read(function() {
+	$.ajax({
+		type: "post",
+			    dataType: "json",
+			    url: "${pageContext.request.contextPath}/i/remark/selectLastRemark?applyId="+applyId,
+			    data: {
+			        'applyId': applyId,
+			    },
+			    success: function (json) {
+			        if (json) {
+			            var str = "";
+			
+			            for (i in json) {
+			                str += "<tr>" +
+			                "<td>" + json[i].date + "</td>" +
+			                "<td>" + json[i].remark + "</td>" +
+			                "<td>" + json[i].operator + "</td>" +
+			                "</tr>";
+			            }
+			            tbody.innerHTML = str;
+			        }
+			    },
+			    error: function () {
+			        alert("查询失败")
+			    }
+	});
+	
+	
+})*/
+
 </script>
 <title>后台-入户申请</title>
 <!-- 网页添加logo -->
@@ -172,7 +203,7 @@ overflow: auto;
 										<th>申请时间</th>
 										<th>是否签单</th>
 										<th class="center">操作</th>
-										<!--<th>最新跟进</th>-->
+										<th>最新跟进</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -291,9 +322,10 @@ overflow: auto;
 											<!--<a class="btn btn-info"
 											href="javascript:void(0);" onclick="sign(${apply.id})" >备注</a>
 											</td>-->
-										<!--<td width="10%">
-										电话为接通，哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈ff
-										</td>-->
+										<!--最新跟进-->
+										<td width="10%">
+											
+										</td>
 
 										</tr>
 									</c:forEach>

@@ -38,6 +38,13 @@ public class RemarkController {
 	@Autowired
 	private RemarkService remarkService;
 	
+	/**
+	 * 保存备注
+	 * @param applyId
+	 * @param remarkMsg
+	 * @param operator
+	 * @return
+	 */
 	@RequestMapping
 	public ModelAndView save(@RequestParam("applyId") Integer applyId,@RequestParam("remarkMsg") String remarkMsg,@RequestParam("operator") String operator) {
 		ModelAndView mv = new ModelAndView();
@@ -60,7 +67,11 @@ public class RemarkController {
 		
 	}
 	
-	
+	/**
+	 * 查询备注信息
+	 * @param applyId
+	 * @param response
+	 */
 	@RequestMapping("/selectRemark")
 	public void selectRemark(@RequestParam("applyId") Integer applyId,HttpServletResponse response){
 		
@@ -77,6 +88,26 @@ public class RemarkController {
 			e.printStackTrace();
 		}
 	}
+	
+	/*
+	 * 查询最新留言
+	 */
+	/*@RequestMapping("/selectLastRemark")
+	public void selectRemark(@RequestParam("applyId") Integer applyId,HttpServletResponse response){
+		
+		List<Remark> remarks = null;
+		
+		remarks = remarkService.selectByApplyId(applyId);
+		
+		String json = JSON.toJSONString(remarks);
+		
+		try {
+			response.getWriter().println(json);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}*/
 	
 
 	
