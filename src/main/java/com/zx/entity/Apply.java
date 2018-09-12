@@ -35,6 +35,9 @@ public class Apply {
     private Date updateTime;
 
     private Date createTime;
+    
+    // 新添加的 最新跟进记录   18-9-12
+    private String lastRemark;
 
     public Integer getId() {
         return id;
@@ -164,4 +167,14 @@ public class Apply {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
+	public String getLastRemark() {
+		return lastRemark;
+	}
+
+	public void setLastRemark(String lastRemark) {
+		this.lastRemark = lastRemark;
+	}
+    
+    
 }
