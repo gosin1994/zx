@@ -49,6 +49,11 @@ public class Remark {
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}
+	@Override
+	public String toString() {
+		return "Remark [id=" + id + ", date=" + date + ", applyId=" + applyId + ", remark=" + remark + ", operator="
+				+ operator + "]";
+	}
 	
 	
 	

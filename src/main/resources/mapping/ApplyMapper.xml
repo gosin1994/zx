@@ -17,10 +17,23 @@
     <result column="state" property="state" jdbcType="INTEGER" />
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    
+    <!-- apply和remark 一对多关联 -->
+    <collection property="remarks" ofType="com.zx.entity.Remark">
+    	<!-- <result column="id" property="id" jdbcType="INTEGER" />
+    	<result column="operator" property="operator" jdbcType="VARCHAR" />
+    	<result column="apply_id" property="applyId"  jdbcType="INTEGER" /> -->
+    	
+    	<result column="remark" property="remark" jdbcType="VARCHAR" />
+    	
+    	<!-- <result column="create_time" property="date" jdbcType="VARCHAR" /> -->
+    </collection>
+    
   </resultMap>
+  
   <sql id="Base_Column_List" >
-    id, name, phone, age, insure_year, education_level, customer_id, is_member, member_id, 
-    member_name, state, update_time, create_time,root_member_id,root_member_name
+    t_apply.id, name, phone, age, insure_year, education_level, customer_id, is_member, member_id, 
+    member_name, state, update_time, t_apply.create_time,root_member_id,root_member_name
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -30,9 +43,15 @@
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
     select 
-    <include refid="Base_Column_List" />
-    from t_apply
-    where 1=1
+  	 <include refid="Base_Column_List" /> 
+   	,t_remark.remark
+   
+    <!-- from t_apply
+    where 1=1 -->
+    
+    from t_apply left join t_remark 
+    on t_apply.id = t_remark.apply_id
+    
     <if test="query.rootMemberId != null" >
 		and root_member_id = #{query.rootMemberId,jdbcType=INTEGER}
      </if>

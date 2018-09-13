@@ -1,6 +1,8 @@
 package com.zx.entity;
 
 import java.util.Date;
+import java.util.List;
+
 
 public class Apply {
     private Integer id;
@@ -37,7 +39,7 @@ public class Apply {
     private Date createTime;
     
     // 新添加的 最新跟进记录   18-9-12
-    private String lastRemark;
+    private List<Remark> remarks;
 
     public Integer getId() {
         return id;
@@ -168,13 +170,26 @@ public class Apply {
         this.createTime = createTime;
     }
 
-	public String getLastRemark() {
-		return lastRemark;
+
+	
+
+	public List<Remark> getRemarks() {
+		return remarks;
 	}
 
-	public void setLastRemark(String lastRemark) {
-		this.lastRemark = lastRemark;
+	public void setRemarks(List<Remark> remarks) {
+		this.remarks = remarks;
 	}
-    
+
+	@Override
+	public String toString() {
+		return "Apply [id=" + id + ", name=" + name + ", phone=" + phone + ", age=" + age + ", insureYear=" + insureYear
+				+ ", educationLevel=" + educationLevel + ", enterEducationLevel=" + enterEducationLevel
+				+ ", customerId=" + customerId + ", isMember=" + isMember + ", memberId=" + memberId + ", memberName="
+				+ memberName + ", rootMemberId=" + rootMemberId + ", rootMemberName=" + rootMemberName + ", state="
+				+ state + ", updateTime=" + updateTime + ", createTime=" + createTime + ", remarks=" + remarks + "]";
+	}
+
+	
     
 }

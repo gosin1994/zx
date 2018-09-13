@@ -50,7 +50,11 @@ public class ApplyServiceImpl implements ApplyService {
 	
 	@Override
 	public List<Apply> selectAll(Apply query, Page<Apply> page) {
-		return applyDao.selectAll(query, page);
+		
+		List<Apply> allApplies = applyDao.selectAll(query, page);
+		System.out.println("applyServiceImpl打印selectAll数据："+allApplies);
+		System.out.println("allApplies[0]========"+allApplies.get(0));
+		return allApplies;
 	}
 	
 	

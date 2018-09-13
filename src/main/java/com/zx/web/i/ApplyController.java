@@ -37,6 +37,7 @@ public class ApplyController {
 		List<Apply> applies = null;
 		if(user.getIsAdmin()==1){
 			applies = applyService.selectAll(query,page);
+			
 		}else {
 			String phone = user.getPhone();
 			applies = applyService.selectChildApply(query, page, phone);

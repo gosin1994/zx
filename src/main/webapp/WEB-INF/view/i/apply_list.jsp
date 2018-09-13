@@ -203,7 +203,7 @@ overflow: auto;
 										<th>申请时间</th>
 										<th>是否签单</th>
 										<th class="center">操作</th>
-										<th>最新跟进</th>
+										<th>最新跟进记录</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -324,9 +324,17 @@ overflow: auto;
 											</td>-->
 										<!--最新跟进-->
 										<td width="10%">
-											
+											<!--<c:out value="${apply.remarks[0].remark}" />-->
+											<c:choose>
+												<c:when test="${apply.remarks[0].remark}==">
+													暂无
+												</c:when>
+												<c:otherwise>
+													${apply.remarks[0].remark}
+												</c:otherwise>
+											</c:choose>
 										</td>
-
+											
 										</tr>
 									</c:forEach>
 								</tbody>
