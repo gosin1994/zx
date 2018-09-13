@@ -52,8 +52,6 @@ public class ApplyServiceImpl implements ApplyService {
 	public List<Apply> selectAll(Apply query, Page<Apply> page) {
 		
 		List<Apply> allApplies = applyDao.selectAll(query, page);
-		System.out.println("applyServiceImpl打印selectAll数据："+allApplies);
-		System.out.println("allApplies[0]========"+allApplies.get(0));
 		return allApplies;
 	}
 	
@@ -266,7 +264,6 @@ public class ApplyServiceImpl implements ApplyService {
 		
 		try {
 			Member member = memberDao.selectByPhone(phone);
-			System.out.println(member.toString());
 			query.setRootMemberId(member.getId());
 		} catch (Exception e) {
 			// TODO: handle exception

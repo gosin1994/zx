@@ -46,7 +46,10 @@ public class ApplyServiceImpl2 implements ApplyService2 {
 	
 	@Override
 	public List<Apply2> selectAll(Apply2 query, Page<Apply2> page) {
-		return applyDao2.selectAll(query, page);
+		 List<Apply2> allApplies = applyDao2.selectAll(query, page);
+		 System.out.println("进入了applyServiceImpl2>>>>>>>>>>"+allApplies);
+		 return allApplies;
+		
 	}
 	
 	

@@ -1,5 +1,5 @@
 <!--
-	author：gosin1994
+	author：龚鑫
 	  date：2018-08-17 14:23  
 	 email：gx1008666@163.com
 -->
@@ -282,7 +282,7 @@ overflow: auto;
 											
 											<!--<td class="center"><c:out value="${apply.age}" /></td>
 											<td class="center"><c:out value="${apply.insureYear}" /></td>-->
-											<td  class="center">
+											<td width="6%" class="center">
 											<c:choose>
 												<c:when test="${apply.isMember==1}">
 													是
@@ -294,12 +294,12 @@ overflow: auto;
 											</td>
 											<td class="center"><c:out value="${apply.memberName}" /></td>
 											<td class="center"><c:out value="${apply.rootMemberName}" /></td>
-											<td  class="center"><fmt:formatDate
+											<td width="9%" class="center"><fmt:formatDate
 													value="${apply.createTime}" type="both" /></td>
-											<td class="center">
+											<td width="5%" class="center">
 											<c:choose>
 												<c:when test="${apply.state==1}">
-													已签单
+													已签
 												</c:when>
 												<c:otherwise>
 													否
@@ -324,15 +324,15 @@ overflow: auto;
 											</td>-->
 										<!--最新跟进-->
 										<td width="10%">
-											<!--<c:out value="${apply.remarks[0].remark}" />-->
-											<c:choose>
+											<c:out value="${apply.remarks[0].remark}" />
+											<!--<c:choose>
 												<c:when test="${apply.remarks[0].remark}==">
 													暂无
 												</c:when>
 												<c:otherwise>
 													${apply.remarks[0].remark}
 												</c:otherwise>
-											</c:choose>
+											</c:choose>-->
 										</td>
 											
 										</tr>
