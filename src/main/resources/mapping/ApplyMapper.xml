@@ -50,7 +50,8 @@
     where 1=1 -->
     
     from t_apply left join t_remark 
-    on t_apply.id = t_remark.apply_id
+    on t_apply.id = t_remark.apply_id 
+    where 1=1
     
     <if test="query.rootMemberId != null" >
 		and root_member_id = #{query.rootMemberId,jdbcType=INTEGER}
