@@ -18,6 +18,9 @@
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     
+    <!-- 新加入的 关键词 18-09-27 -->
+    <result column="keyword" property="keyword" jdbcType="VARCHAR" />
+    
     <!-- apply和remark 一对多关联 -->
     <collection property="remarks" ofType="com.zx.entity.Remark">
     	<!-- <result column="id" property="id" jdbcType="INTEGER" />
@@ -33,7 +36,7 @@
   
   <sql id="Base_Column_List" >
     t_apply.id, name, phone, age, insure_year, education_level, customer_id, is_member, member_id, 
-    member_name, state, update_time, t_apply.create_time,root_member_id,root_member_name
+    member_name, state, update_time, t_apply.create_time,root_member_id,root_member_name,keyword
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 

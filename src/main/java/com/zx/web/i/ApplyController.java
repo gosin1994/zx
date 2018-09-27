@@ -43,6 +43,7 @@ public class ApplyController {
 			applies = applyService.selectChildApply(query, page, phone);
 		}
 		
+		//System.out.println("进来了ApplyController list applies=="+applies);
 		
 		mv.addObject("query", query);
 		mv.addObject("page", page);

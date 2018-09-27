@@ -204,6 +204,7 @@ overflow: auto;
 										<th>是否签单</th>
 										<th class="center">操作</th>
 										<th>最新跟进记录</th>
+										<th>关键词</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -334,6 +335,9 @@ overflow: auto;
 												</c:otherwise>
 											</c:choose>-->
 										</td>
+										
+										<!--关键词18-09-27-->
+										<td width="10%" class="center"><c:out value="${apply.keyword}" /></td>
 											
 										</tr>
 									</c:forEach>

@@ -40,6 +40,9 @@ public class Apply {
     
     // 新添加的 最新跟进记录   18-9-12
     private List<Remark> remarks;
+    
+    // 新加入的关键字 18-9-27
+    private String keyword;
 
     public Integer getId() {
         return id;
@@ -181,15 +184,24 @@ public class Apply {
 		this.remarks = remarks;
 	}
 
+	
+	public String getKeyword() {
+		return keyword;
+	}
+
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+
 	@Override
 	public String toString() {
 		return "Apply [id=" + id + ", name=" + name + ", phone=" + phone + ", age=" + age + ", insureYear=" + insureYear
 				+ ", educationLevel=" + educationLevel + ", enterEducationLevel=" + enterEducationLevel
 				+ ", customerId=" + customerId + ", isMember=" + isMember + ", memberId=" + memberId + ", memberName="
 				+ memberName + ", rootMemberId=" + rootMemberId + ", rootMemberName=" + rootMemberName + ", state="
-				+ state + ", updateTime=" + updateTime + ", createTime=" + createTime + ", remarks=" + remarks + "]";
+				+ state + ", updateTime=" + updateTime + ", createTime=" + createTime + ", remarks=" + remarks
+				+ ", keyword=" + keyword + "]";
 	}
 
-	
     
 }
