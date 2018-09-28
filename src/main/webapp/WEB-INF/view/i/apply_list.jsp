@@ -204,7 +204,14 @@ overflow: auto;
 										<th>是否签单</th>
 										<th class="center">操作</th>
 										<th>最新跟进记录</th>
-										<th>关键词</th>
+										
+										<c:if test="${sessionScope.user.phone=='13611111111'}">
+											<th>关键词</th>
+										</c:if>
+										<c:if test="${sessionScope.user.phone=='13600000000'}">
+											<th>关键词</th>
+										</c:if>
+										
 									</tr>
 								</thead>
 								<tbody>
@@ -337,7 +344,16 @@ overflow: auto;
 										</td>
 										
 										<!--关键词18-09-27-->
-										<td width="10%" class="center"><c:out value="${apply.keyword}" /></td>
+										<c:if test="${sessionScope.user.phone=='13611111111'}">
+											<td width="10%" class="center">
+												<c:out value="${apply.keyword}" />
+											</td>
+										</c:if>
+										<c:if test="${sessionScope.user.phone=='13600000000'}">
+											<td width="10%" class="center">
+												<c:out value="${apply.keyword}" />
+											</td>
+										</c:if>
 											
 										</tr>
 									</c:forEach>

@@ -54,7 +54,7 @@
 }
 
 .inp{
-	width:250px;
+	width:250px; 
 	height: 70px;
 }
 .inp2{
@@ -111,7 +111,7 @@
 						method="post" onsubmit="return verify();">
 						
 					<input class="inp"  class="input-large span10"  name="phone" id="phone"
-							value="" type="text" placeholder="请输入手机号" />
+							value="" type="text" placeholder="请输入手机号" maxlength="11"/>
 					<br /><br />	
 					<input class="inp" class="input-large span10"  name="password" id="passwd"
 							value="" type="password" placeholder="请输入密码" />	
