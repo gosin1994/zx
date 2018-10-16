@@ -112,8 +112,8 @@
        <div data-node="topCount" class="form-count">
         <span class="split-count"></span>
         <span data-node="countTextPre" class="count-text">目前已经有</span>
-        <span data-node="countTextNum" class="count-text-num">11283</span>
-        <span data-node="countTextPos" class="count-text">人参与活动</span>
+        <span data-node="countTextNum" class="count-text-num">64288</span>
+        <span data-node="countTextPos" class="count-text">人成功入户</span>
         <span class="split-count"></span>
        </div>
        
